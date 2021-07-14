@@ -1,0 +1,4 @@
+@function sassvg-Icon-arrow-down($fillcolor, $strokecolor, $extrastyles){ @return 'data:image/svg+xml;charset=US-ASCII,%3Csvg%20id%3D%22Icon_arrow_down%22%20data-name%3D%22Icon%20arrow%20down%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20style%3D%22#{$extrastyles}%22%3E%20%3Crect%20id%3D%22Boundary%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22none%22%2F%3E%20%3Cpath%20id%3D%22_Color%22%20data-name%3D%22%20%26%23x21B3%3BColor%22%20d%3D%22M10.59%2C0%2C6%2C4.574%2C1.41%2C0%2C0%2C1.408%2C6%2C7.4l6-5.992Z%22%20transform%3D%22translate%286%208.6%29%22%20fill%3D%22#{$fillcolor}%22%2F%3E%20%3C%2Fsvg%3E'; }
+
+
+$sassvg-map: ('Icon-arrow-down': ('name': 'Icon-arrow-down', 'folder': 'svg'),);

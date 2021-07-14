@@ -1,0 +1,77 @@
+@import "../constants";
+@import "../base/mixins";
+@import "../../svg/sassvg";
+
+
+// ----- Container Styles -----
+.box-bordeaux {
+  @include box-bordeaux();
+  @extend .invert;
+}
+
+.box-grey {
+  @include box-grey();
+}
+
+.box-white {
+  @include box-white();
+}
+
+.box-bordeaux,
+.box-grey {
+  // On full width items the container needs padding
+  &.width-full {
+    padding: 100px 0 160px 0;
+  }
+}
+
+
+// ----- CTA Styles -----
+.cta {
+  @include cta();
+}
+
+.cta-light {
+  @include cta('light');
+}
+
+
+// ----- TEXT Styles -----
+.center {
+  text-align: center;
+}
+
+.copy-lead {
+  @include copy-lead();
+  display: block;
+  margin-bottom: 18px;
+}
+
+.overline {
+  @include overline();
+  display: block;
+  margin-bottom: 18px;
+}
+
+.list-checkmark {
+  li {
+    list-style: none;
+    position: relative;
+
+    &:before {
+      content: '';
+      //background: sassvg("Icon-check", $color-green);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -20px;
+    }
+  }
+}
+
+// Adds scroll for tables on mobile and tablet
+.table-wrap {
+  @include until($desktop) {
+    @include horizontal-scroll();
+  }
+}

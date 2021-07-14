@@ -1,0 +1,30 @@
+<!-- Header Background is switched by body class -->
+<header class="width-full page-header--container">
+    <div class="width-xl page-header--container-inner">
+        <div class="page-header--logo">
+            {% include "../../partials/page/__header_logo.nunjucks" %}
+        </div>
+        <div class="page-header--section-links">
+            <a href="#"
+               class="cta-light">Customer</a>
+            <a href="#"
+               class="cta-light">Partner</a>
+            <a href="#"
+               class="cta-light">Developer</a>
+        </div>
+    </div>
+</header>
+
+<header class="width-full page-navigation--container">
+    <div class="width-xl page-navigation--container-inner">
+        <nav class="page-navigation--main-nav">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">How to proceed</a></li>
+                <li><a href="#">Pricing & Numbers</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

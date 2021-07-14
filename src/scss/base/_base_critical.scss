@@ -1,0 +1,196 @@
+@import "../constants";
+@import "../base/mixins";
+@import '../../../node_modules/normalize.css/normalize';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  line-height: $line-height;
+}
+
+body {
+  padding-left: $container-margin;
+  padding-right: $container-margin;
+  @include between($mobile, $desktop) {
+    padding-left: $container-margin-tablet;
+    padding-right: $container-margin-tablet;
+  }
+  @include from($desktop) {
+    padding-left: $container-margin-desktop;
+    padding-right: $container-margin-desktop;
+  }
+}
+
+body, th, td, input, textarea {
+  font-size: $font-size;
+  font-family: $font-copy;
+  line-height: $line-height;
+  color: $color-text-base;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.invert {
+  color: $color-typography-invert;
+}
+
+h1, .h1 {
+  margin: 0 0 .5em 0;
+  font-family: $font-head;
+  font-size: 56px;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-headline;
+  color: $color-text-base;
+  @include from($desktop-large) {
+  }
+  @include from($wide-screen) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+h2, .h2 {
+  margin: 0 0 40px 0;
+  font-family: $font-head;
+  font-size: 40px;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-headline;
+  color: $color-text-base;
+  @include from($tablet) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+h3, .h3 {
+  margin: 0 0 .5em 0;
+  font-family: $font-head;
+  font-size: 28px;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-headline;
+  color: $color-text-base;
+  @include from($tablet) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+h4, .h4 { // Subtitle 1
+  margin: 16px 0;
+  font-family: $font-head;
+  font-size: 22px;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline;
+  @include from($tablet) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+h5, .h5 { // Subtitle 2
+  margin: 24px 0;
+  font-family: $font-head;
+  font-size: 16px;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline;
+  @include from($tablet) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+ul, ol {
+  margin-bottom: 24px;
+}
+
+ul {
+  li {
+    margin-left: 20px;
+    padding-left: 16px;
+    list-style: disc;
+  }
+}
+
+ol {
+  li {
+    margin-left: 24px;
+    padding-left: 14px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img.icon {
+  width: auto;
+}
+
+a {
+  cursor: pointer;
+  color: $color-text-link;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+
+  &:visited,
+  &:hover {
+    color: $color-text-hover;
+  }
+}
+
+b, strong {
+  font-weight: $font-weight-semibold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 60px 0;
+  @include from($desktop) {
+    table-layout: fixed;
+  }
+}
+
+th, td {
+  border: none;
+  border-bottom: 1px solid $color-border-table;
+  padding: 8px 30px 8px 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: $font-weight-medium;
+  text-align: left;
+}
+
+blockquote, .quote {
+  font-size: 22px;
+  line-height: 34px;
+  font-style: italic;
+  letter-spacing: -0.44px;
+}

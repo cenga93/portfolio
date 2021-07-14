@@ -1,0 +1,16 @@
+{
+  "proxy": "https://dev.portfolio.rs/",
+  "debug": true,
+  "path": {
+    "nodePath": "./node_modules/",
+    "distPath": "./dist/"
+  },
+  "browserSync": {
+    "target": "https://dev.portfolio.rs/"
+  },
+  "sassOptions": {
+    "sourceMap": "sass",
+    "sourceComments": "map",
+    "outputStyle": "nested"
+  }
+}

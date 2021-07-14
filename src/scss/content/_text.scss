@@ -1,0 +1,33 @@
+@import "../_constants";
+@import "../base/base_critical";
+@import "../../svg/_sassvg";
+
+// Layout Switch from $tablet
+
+.ce-text--container {
+  &--image-left,
+  &--image-right {
+    @include from($tablet) {
+      display: grid;
+      @include grid-gap();
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.ce-text--container:not(:last-child) {
+  padding-bottom: $gutter-mobile;
+  @include between($tablet, $desktop) {
+    padding-bottom: $gutter-tablet;
+  }
+  @include from($desktop) {
+    padding-bottom: $gutter-desktop;
+  }
+}
+
+.ce-text--image {
+  @include rounded-corners();
+  @include until($tablet) {
+    margin-bottom: 20px;
+  }
+}

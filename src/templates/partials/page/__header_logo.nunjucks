@@ -1,0 +1,9 @@
+<a href="/"
+   title="Peoplefone">
+    <svg class="page-header--logo-icon hide-until-tablet">
+        <use href="img/svg/svg.svg#Logo"></use>
+    </svg>
+    <svg class="page-header--logo-icon hide-from-tablet">
+        <use href="img/svg/svg.svg#Logo-mobile"></use>
+    </svg>
+</a>

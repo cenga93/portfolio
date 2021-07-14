@@ -1,0 +1,133 @@
+@import "../constants";
+
+.header-desktop,
+.footer-desktop,
+.content-main {
+  // Add margin for all items
+  // We will move full width items to the borders with negative margins
+
+  //padding-left: $container-margin;
+  //padding-right: $container-margin;
+
+}
+
+// All items on page are intended left and right to disable text going to the edges
+// full width items will have negative margins to compensate this space
+.width-full {
+  margin-left: -$container-margin;
+  margin-right: -$container-margin;
+  padding-left: $container-margin;
+  padding-right: $container-margin;
+  @include between($mobile, $desktop) {
+    margin-left: -$container-margin-tablet;
+    margin-right: -$container-margin-tablet;
+    padding-left: $container-margin-tablet;
+    padding-right: $container-margin-tablet;
+  }
+  @include from($desktop) {
+    margin-left: -$container-margin-desktop;
+    margin-right: -$container-margin-desktop;
+    padding-left: $container-margin-desktop;
+    padding-right: $container-margin-desktop;
+  }
+
+  //.width-xxs,
+  //.width-xs,
+  //.width-s,
+  //.width-m,
+  //.width-l,
+  //.width-xl,
+  //.width-xxl {
+  //  padding-left: $container-margin;
+  //  padding-right: $container-margin;
+  //  @include between($mobile, $desktop) {
+  //    padding-left: $container-margin-tablet;
+  //    padding-right: $container-margin-tablet;
+  //  }
+  //  @include from($desktop) {
+  //    padding-left: $container-margin-desktop;
+  //    padding-right: $container-margin-desktop;
+  //  }
+  //}
+}
+
+// Basic section margins, can be overridden individually
+section {
+  margin-top: 52px;
+  margin-bottom: 120px;
+  @include from($desktop) {
+    margin-top: 100px;
+    margin-bottom: 160px;
+  }
+}
+
+
+$widths: "xxs" $width-xxs,
+"xs" $width-xs,
+"s" $width-s,
+"m" $width-m,
+"l" $container-max-width, // $width-l,
+"xl" $container-max-width, // $width-xl,
+"xxl" $container-max-width; // $width-xxl;
+
+$margins: "xxs" $margin-xxs,
+"xs" $margin-xs,
+"s" $margin-s,
+"m" $margin-m,
+"l" $margin-l,
+"xl" $margin-xl,
+"xxl" $margin-xxl;
+
+$mq: "mobile-small" $mobile-small,
+"mobile" $mobile,
+"tablet" $tablet,
+"desktop" $desktop,
+"desktop-large" $desktop-large,
+"wide-screen" $wide-screen,
+"ultra-wide-screen" $ultra-wide-screen;
+
+@each $name, $width in $widths {
+  .width-#{$name} {
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@each $mediaQuery, $mqName in $mq {
+  .hide-#{$mediaQuery} {
+    display: none;
+  }
+  .show-#{$mediaQuery} {
+    display: inherit;
+  }
+  .hide-from-#{$mediaQuery} {
+    @include from($mqName) {
+      display: none;
+    }
+  }
+  .show-from-#{$mediaQuery} {
+    @include from($mqName) {
+      display: inherit;
+    }
+    @include until($mqName) {
+      display: none;
+    }
+  }
+  .hide-until-#{$mediaQuery} {
+    @include until($mqName) {
+      display: none;
+    }
+    @include from($mqName) {
+      display: inherit;
+    }
+  }
+  .show-until-#{$mediaQuery} {
+    @include until($mqName) {
+      display: inherit;
+    }
+    @include from($mqName) {
+      display: none;
+    }
+  }
+}

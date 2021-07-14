@@ -1,0 +1,237 @@
+@import "../constants";
+
+// ----- MEDIA QUERIES -----
+
+@mixin until($width) {
+  // until ($tablet), exception for mobile query
+  @if ($width == 768) {
+    @media (max-width: $width - 1) {
+      @content;
+    }
+  }
+  @if ($width != 768) {
+    @media (max-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin from($width) {
+  // from ($tablet), exception for tablet query
+  @if ($width == 768) {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+  @if ($width != 768) {
+    @media (min-width: $width + 1) {
+      @content;
+    }
+  }
+}
+
+@mixin between($from, $to) {
+  @media (min-width: $from) and (max-width: $to) {
+    @content;
+  }
+}
+
+// from 768px to 1024px
+@mixin tablet() {
+  @include between($tablet, $desktop) {
+    @content;
+  }
+}
+
+// from 1025px to 1200px
+@mixin desktop() {
+  @include between($desktop + 1, $desktop-large) {
+    @content;
+  }
+}
+
+// from 1201px to 1366px
+@mixin desktopLarge() {
+  @include between($desktop-large + 1, $wide-screen) {
+    @content;
+  }
+}
+
+// from 1367px
+@mixin widescreen() {
+  @include from($wide-screen) {
+    @content;
+  }
+}
+
+
+// ----- BOXES -----
+
+@mixin box-bordeaux() {
+  @include box(
+                  $background-color-red,
+                  '',
+                  0,
+                  25px
+  )
+}
+
+@mixin box-grey() {
+  @include box(
+                  $color-grey-light,
+                  '',
+                  $box-radius,
+                  25px
+  )
+}
+
+@mixin box-white() {
+  @include box(
+                  $color-white,
+                  1px solid $color-grey-middle,
+                  $box-radius,
+                  25px
+  )
+}
+
+// Do not call directly
+@mixin box(
+  $background,
+  $border,
+  $border-radius,
+  $padding,
+) {
+  background-color: $background;
+  border: $border;
+  border-radius: $border-radius;
+  padding: $padding;
+}
+
+
+// ----- CTA -----
+
+@mixin cta(
+  $is-light: ''
+) {
+  display: inline-block;
+  margin: 20px 20px 20px 0;
+  padding: 10px 20px;
+  border-radius: $box-radius;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+  transition: background-color 250ms;
+
+  @if $is-light != 'light' {
+    background-color: $color-red;
+    color: $color-white;
+
+    &:visited,
+    &:hover {
+      color: $color-white;
+      background-color: $color-bordeaux;
+    }
+
+    &:active {
+      color: $color-white;
+      background-color: $color-red;
+    }
+  }
+
+  @if $is-light == 'light' {
+    background-color: $color-white;
+    color: $color-red;
+
+    &:visited,
+    &:hover {
+      background-color: $color-grey-light;
+      color: $color-bordeaux;
+    }
+
+    &:active {
+      background-color: $color-grey-light;
+      color: $color-red;
+    }
+  }
+
+}
+
+
+// ----- GRID SETTINGS -----
+@mixin grid-gap() {
+  grid-column-gap: $gutter-mobile;
+  @include between($tablet, $desktop) {
+    grid-column-gap: $gutter-tablet;
+  }
+  @include from($desktop) {
+    grid-column-gap: $gutter-desktop;
+  }
+}
+
+
+// ----- STYLES -----
+
+@mixin copy-lead() {
+  font-family: $font-head;
+  font-size: 22px;
+  font-weight: $font-weight-regular;
+  line-height: 32px;
+  @include from($tablet) {
+  }
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+@mixin overline() {
+  font-family: $font-head;
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+  line-height: 17px;
+  color: $color-text-soft;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  @include from($tablet) {
+  }
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+@mixin rounded-corners() {
+  img {
+    border-radius: $box-radius;
+  }
+}
+
+@mixin horizontal-scroll() {
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 8px;
+
+    @include from($desktop) {
+      height: 12px;
+    }
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+
+    @include from($desktop) {
+      height: 12px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-grey-dark;
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-grey-light;
+  }
+}
