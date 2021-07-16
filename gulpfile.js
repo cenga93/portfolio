@@ -39,6 +39,7 @@ let config = require('./gulpconfig.json');
  */
 const gulp = require('gulp'),
     sass = require('gulp-sass'), // Sass implementation
+    nodemon = require('gulp-nodemon'),
     cleanCss = require('gulp-clean-css'), // Minifies CSS
     bulkSass = require('gulp-sass-bulk-import'), // Enables bulk import of sass files
     browserSync = require('browser-sync').create(), // Enables browser sync
@@ -319,6 +320,15 @@ gulp.task('criticalJs', function () {
 });
 
 
+gulp.task("development", function () {
+    return nodemon({
+        script: 'app.js',
+        watch: ['app.js', 'src/**/*'],
+        ignore: ['gulpfile.js', 'node_modules/**', 'public/**', 'src/assets/js'],
+    }).on('restart', () => {
+        browserSync.reload();
+    });
+})
 // ----------------------------------------------------------------------------------------------------------------------
 // GROUP TASKS
 // ----------------------------------------------------------------------------------------------------------------------
@@ -339,6 +349,7 @@ gulp.task(
         'sass',
         'criticalJs',
         'js',
+        'development'
     )
 );
 

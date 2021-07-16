@@ -19,14 +19,8 @@ _If you don't have and **node** and **npm**, execute the following command:_
   ```
 ***
 ##Dependesies
-* Task: sass:
-  * gulp-ignore
-  * gulp-plumber
-  * gulp-sass-bulk-import
-  * gulp-sass
-  * gulp-concat
-  * gulp-clean-css
-  * gulp-size
-  * gulp-group-css-media-queries
-  * gulp-cssdepth-check
-  * browser-sync
+* dotenv
+* ejs
+* express
+* express-ejs-layouts
+* mongoose
