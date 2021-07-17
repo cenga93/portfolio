@@ -2,7 +2,7 @@ const express           = require('express');
 const dotenv            = require('dotenv');
 const expressLayouts    = require('express-ejs-layouts');
 const path              = require('path');
-const mongoose          = require('mongoose');
+// const mongoose          = require('mongoose');
 const app               = express();
 const PORT              = process.env.PORT || 3000;
 
@@ -16,7 +16,7 @@ const defaultRouter = require('./src/routes/default');
 // const adminRouter = require('./src/routes/admin');
 
 // path
-const __public = path.join(__dirname, 'public');
+const __public = path.join(__dirname, 'dist');
 const __src = path.join(__dirname, 'src');
 const __templates = path.join(__src, 'templates');
 
@@ -33,7 +33,7 @@ app.set('layout', 'layout/_default');
 
 
 // set static files
-// app.use('/css', express.static(path.join(__public, '/css')));
+app.use('/css', express.static(path.join(__public, '/css')));
 // app.use('/js', express.static(path.join(__public, '/js')));
 // app.use('/img', express.static(path.join(__public, '/img')));
 // app.use('/bootstrap/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));
@@ -45,15 +45,11 @@ app.set('layout', 'layout/_default');
 
 
 
-
-
-
-
-// // load routes
+// // Load routes
 // app.use('/admin', adminRouter);
 // app.use(ordersRouter);
 // app.use(authRouter);
 app.use(defaultRouter);
 
 
-const server = app.listen(PORT, () => console.log(`Listening on port: http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Listening on port: http://localhost:${PORT}`));

@@ -2,137 +2,61 @@
 @import "../base/base_critical";
 @import "../../svg/_sassvg";
 
-// ----- Header Background -----
-.pagetype--partner {
-  .page-header--container,
-  .page-navigation--container {
-    background-color: $color-grey-headerbackground;
-  }
-}
-
-// ----- TOP Navigation -----
-.page-header--container {
-  padding-bottom: 50px; // Needed for background color on partner pages
-}
-
-.page-header--container-inner {
-  @include from($desktop) {
-    display: grid;
-    grid-template-columns: 250px auto auto;
-    align-items: center;
-  }
-}
-
-.page-header--logo {
-  padding-top: 5px;
-
-  &-icon {
-    width: 300px;
-    height: 48px;
-  }
-}
-
-.page-header--meta {
-  @include from($desktop) {
-    text-align: right;
-    a, a:visited {
-      font-weight: $font-weight-regular;
-      color: $color-typography;
-    }
-    // First child a and select
-    > a,
-    > div {
-      display: inline-block;
-      margin-left: 20px; // Right aligned
-    }
-  }
-}
-
-.page-header--icon-system,
-.page-header--icon-search {
-  width: 24px;
-  height: 24px;
-  vertical-align: bottom;
-}
-
-.page-header--language {
-  position: relative; // Needed for the popup
-
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background: sassvg('Icon-arrow-down');
-  }
-
-  &-popup {
-    //display: none;
-    position: absolute;
-    top: 40px;
-    left: -20px;
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background: $color-white;
-
-    a {
-      display: block;
-      padding: 10px 30px 10px 20px;
-
-      &:first-child {
-        padding-top: 20px;
-      }
-
-      &:last-child {
-        padding-bottom: 20px;
-      }
-
-      &:hover {
-        background: $color-grey-light;
-      }
-    }
-  }
-}
-
-// ----- MAIN Navigation -----
-.page-navigation--container {
-  padding-bottom: 20px; // Needed for background color on partner pages
-}
-
-.page-navigation--container-inner {
-  @include from($desktop) {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: end;
-  }
-}
-
-.page-navigation--main-nav {
-  margin-left: -20px; // Navigation has padding, indent to align navi with logo
-  // Reset
-  ul, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    padding: 5px 20px; // Add padding, indent whole navigation
-    font-size: 20px;
-    font-weight: $font-weight-regular;
-    color: $color-typography;
-  }
+// Main header
+.header-desktop {
 
 }
 
-.page-navigation--cta {
+// Main container
+.header-desktop--container {
+  border: 1px solid black;
+}
+
+// Header top
+.header-desktop--container-inner--top {
   text-align: right;
+  border-bottom: 1px solid black;
+}
 
-  .cta {
-    margin: 0 0 0 20px; // CTA has margin, reset here
+.header-desktop--topnav {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 0;
+
+  &--item {
+    display: inline;
+
+    &--phone {
+      padding-left: 30px;
+      margin-right: 40px;
+      background: sassvg("phone-solid", $color-typography) no-repeat left;
+      color: $color-grey-mustard;
+    }
+
+    &--mail {
+      padding-left: 30px;
+      background: sassvg("envelope-solid", $color-typography) no-repeat left;
+
+      .mail_me {
+        font-weight: 400;
+        color: $color-grey-mustard;
+      }
+    }
   }
+}
+
+// Header bottom
+.header-desktop--container-inner--bottom {
+  display: grid;
+  grid-template-columns:1fr 1fr auto;
+  align-items: center;
+}
+
+
+.header-desktop--mainnavigation-list {
+
+}
+
+.header-desktop--mainnavigation-item {
+  display: inline;
 }

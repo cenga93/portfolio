@@ -379,17 +379,12 @@ gulp.task(
  * Returns void
  */
 gulp.task('watch', function () {
-    browserSync.init({
-        //proxy: config.proxy
-        server: {
-            baseDir: "./dist/"
-        }
-    })
-    ;
+
     // Watch all non-critical SCSS files
     gulp.watch(
         [
             './src/scss/main.scss',
+            './src/scss/pages/*.scss',
             './src/scss/base/**/*.scss',
             './src/scss/_mixins.scss',
             './src/scss/content/**/*.scss',
@@ -403,7 +398,7 @@ gulp.task('watch', function () {
     gulp.watch(
         [
             './src/scss/critical.scss',
-            './src/scss/base/_base_critical.scss',
+            './src/scss/base/**/*.scss',
             './src/scss/pages/**/*.scss',
             './src/scss/_constants.scss'
         ],

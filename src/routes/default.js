@@ -5,9 +5,10 @@ const router = express.Router();
 const {index} = require('../controllers/default');
 
 /**
+ * Index page
  * @method GET
  */
-// Index page -- route
+
 router.get('/', index);
 
 
