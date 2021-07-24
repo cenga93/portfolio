@@ -1,6 +1,7 @@
 @import "../constants";
 @import "../base/mixins";
-@import '../../../node_modules/normalize.css/normalize';
+@import "../../../node_modules/normalize.css/normalize";
+@import "../../svg/sassvg";
 
 *,
 *::before,
@@ -31,7 +32,11 @@ body {
   }
 }
 
-body, th, td, input, textarea {
+body,
+th,
+td,
+input,
+textarea {
   font-size: $font-size;
   font-family: $font-copy;
   line-height: $line-height;
@@ -44,7 +49,8 @@ body, th, td, input, textarea {
   color: $color-typography-invert;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   margin: 0;
   font-family: $font-head;
   font-size: 56px;
@@ -61,10 +67,27 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   margin: 0;
   font-family: $font-head;
-  font-size: 40px;
+  font-size: 36px;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-headline;
+  color: $color-text-base;
+  @include from($tablet) {
+  }
+
+  .invert & {
+    color: $color-typography-invert;
+  }
+}
+
+h3,
+.h3 {
+  margin: 0;
+  font-family: $font-head;
+  font-size: 26px;
   font-weight: $font-weight-medium;
   line-height: $line-height-headline;
   color: $color-text-base;
@@ -76,26 +99,12 @@ h2, .h2 {
   }
 }
 
-h3, .h3 {
-  margin: 0;
-  font-family: $font-head;
-  font-size: 28px;
-  font-weight: $font-weight-medium;
-  line-height: $line-height-headline;
-  color: $color-text-base;
-  @include from($tablet) {
-  }
-
-  .invert & {
-    color: $color-typography-invert;
-  }
-}
-
-h4, .h4 { // Subtitle 1
+h4,
+.h4 {
+  // Subtitle 1
   margin: 0;
   font-family: $font-head;
   font-size: 22px;
-  font-weight: $font-weight-semibold;
   line-height: $line-height-headline;
   @include from($tablet) {
   }
@@ -105,7 +114,9 @@ h4, .h4 { // Subtitle 1
   }
 }
 
-h5, .h5 { // Subtitle 2
+h5,
+.h5 {
+  // Subtitle 2
   margin: 0;
   font-family: $font-head;
   font-size: 16px;
@@ -120,10 +131,17 @@ h5, .h5 { // Subtitle 2
 }
 
 p {
-  margin-bottom: 24px;
+  // margin-bottom: 24px;
+  font-weight: $font-weight-light;
+  color: $color-grey-dark;
 }
 
-ul, ol {
+ul,
+ol {
+  margin: 0;
+}
+ul,
+ol {
   margin: 0;
 }
 
@@ -152,31 +170,29 @@ img.icon {
 }
 
 a {
-  cursor: pointer;
-  //color: $color-text-link;
   font-weight: $font-weight-semibold;
+  cursor: pointer;
   text-decoration: none;
-
-  &:visited,
-  &:hover {
-    //color: $color-text-hover;
-  }
+  color: $color-text-link;
 }
 
-b, strong {
+b,
+strong {
   font-weight: $font-weight-semibold;
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
   margin: 60px 0;
+  border-collapse: collapse;
+
   @include from($desktop) {
     table-layout: fixed;
   }
 }
 
-th, td {
+th,
+td {
   border: none;
   border-bottom: 1px solid $color-border-table;
   padding: 8px 30px 8px 0;
@@ -188,51 +204,51 @@ th {
   text-align: left;
 }
 
-blockquote, .quote {
+blockquote,
+.quote {
   font-size: 22px;
   line-height: 34px;
   font-style: italic;
   letter-spacing: -0.44px;
 }
 
-
-// Desktop logo
-.header--logo {
-  //display: inline-block;
-  padding-left: 50px;
-  background: sassvg("code-solid", $color-grey-mustard) no-repeat left;
+// Header logo
+.logo {
+  padding-left: 45px;
+  background: sassvg("code-solid", $color-green) no-repeat left;
   background-size: 35px;
-  color: gray;
 
   h4 {
-    line-height: 1;
     margin-top: 15px;
+    line-height: 1;
+    color: $color-white;
   }
 
   small {
     position: relative;
     top: -10px;
     font-style: italic;
+    color: $color-grey-dark;
   }
 }
 
-// Mobile logo
-.header--logo--mobile {
-  //display: inline-block;
-  padding-top: 25px;
-  background: sassvg("code-solid", $color-grey-mustard) no-repeat left 8px;
-  background-size: 35px;
-  color: gray;
+// Footer logo
+.logo--footer {
   display: inline-block;
+  padding-top: 25px;
+  color: $color-typography;
+  background: sassvg("code-solid", $color-typography) no-repeat left 8px;
+  background-size: 35px;
 
   h4 {
-    line-height: 1;
     margin-top: 15px;
+    line-height: 1;
   }
 
   small {
     position: relative;
-    top: -10px;
+    top: -8px;
     font-style: italic;
+    font-weight: $font-weight-light;
   }
 }

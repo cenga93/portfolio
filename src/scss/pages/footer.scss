@@ -1,0 +1,85 @@
+@import "../_constants";
+@import "../base/base_critical";
+@import "../base/base_main";
+
+.footer {
+  padding: 0 32px;
+  background: $color-green;
+  color: $color-typography;
+}
+
+// Footer top
+.footer--container-top {
+  display: grid;
+  padding: 40px 0;
+
+  @include from($tablet) {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+// Footer botton
+.footer--container-bottom {
+  padding: 10px 32px;
+  border-top: 1px solid $color-white;
+  margin: 0 -32px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer-copy {
+  color: $color-black;
+  font-weight: $font-weight-medium;
+  font-size: 12px;
+}
+
+.footer--info {
+  display: grid;
+
+  @include from($mobile) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include from($tablet) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.footer--info--list {
+  padding: 20px 0;
+  @include from($tablet) {
+    padding: 20px 30px;
+  }
+}
+
+//footer li
+.footer--info--item {
+  margin-bottom: 10px;
+  position: relative;
+  font-size: $font-size-small;
+  font-weight: $font-weight-light;
+  color: $color-black;
+
+  &:first-child {
+    color: $color-black;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    @extend .underline;
+
+    &:after {
+      background: $color-black;
+    }
+  }
+}
+
+.footer--info--link {
+  color: $color-black;
+  font-weight: $font-weight-light;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

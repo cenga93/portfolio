@@ -1,0 +1,57 @@
+// Container inner | GRID Layout
+.text-image-teaser--container-inner {
+  display: grid;
+  grid-gap: 50px;
+  padding: 70px 0;
+
+  @include from($tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Headline
+.text-image-teaser--headline {
+  position: relative;
+  margin-bottom: 40px;
+  @extend .underline;
+}
+
+// Column left -- CTA
+.text-image-teaser--link {
+  margin-left: 0 !important; // Overrider CTA global style
+}
+
+// Column left
+.text-image-teaser--column-left {
+  @include until($tablet) {
+    order: 2;
+  }
+}
+
+// Column right -- image container
+.text-image-teaser--img-box {
+  position: relative;
+  display: block;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    right: -15px;
+    left: 25%;
+    z-index: -1;
+    border: 2px solid $color-green;
+
+    @include from($desktop) {
+      top: -30px;
+      bottom: -30px;
+      right: -30px;
+    }
+  }
+
+  // Image
+  &--image {
+    display: block;
+  }
+}

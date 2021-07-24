@@ -1,0 +1,128 @@
+.last-projects {
+  padding: 20px 0;
+}
+
+.last-projects--headline{
+  margin-bottom: 50px;
+}
+
+.last-projects--content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include from($desktop) {
+    display: grid;
+    @include grid-gap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// Left column
+.last-projects--column-left {
+  @include from($desktop-large) {
+    display: inherit;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.last-projects--left {
+  &--headline {
+    position: relative;
+    margin-bottom: 40px;
+    @extend .underline;
+  }
+}
+
+.last-projects--left-image-box {
+  @include until($desktop) {
+    display: none;
+  }
+}
+
+.last-projects--left--link {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  .cta-main-arrow-invert {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    border: 0;
+    padding: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+    background-image: linear-gradient(180deg, #00000005 0%, #0000009f 100%);
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:after {
+      transition: opacity 0.5s;
+      opacity: 1;
+    }
+
+    img {
+      transition: 0.5s;
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    transition: 0.5s;
+  }
+}
+
+.last-projects--left-content-box {
+  margin: 1px;
+  outline: 1px solid $color-grey-light;
+  padding: 20px 30px;
+  .cta-outline-black {
+    margin: 0;
+  }
+}
+
+.last-projects--right-link {
+  font-weight: $font-weight-light;
+  color: $color-grey-dark;
+  font-size: 14px;
+  display: block;
+  text-decoration: underline $color-green-dark;
+  margin-top: 10px;
+}
+
+//  Right column
+.last-projects--column-right {
+  grid-gap: 30px;
+  @include from($mobile) {
+    display: inherit;
+  }
+
+
+  @include from($tablet) {
+    grid-gap: 10px;
+  }
+}
+
+.last-projects--right-item {
+  display: grid;
+  grid-gap: 20px;
+
+  @include from($desktop-large) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.last-projects--right-image-box {
+  border: 1px solid $color-grey-light;
+}

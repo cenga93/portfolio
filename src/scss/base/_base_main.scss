@@ -2,55 +2,122 @@
 @import "../base/mixins";
 @import "../../svg/sassvg";
 
-
-// ----- Container Styles -----
-.box-bordeaux {
-  @include box-bordeaux();
-  @extend .invert;
-}
-
-.box-grey {
-  @include box-grey();
-}
-
-.box-white {
-  @include box-white();
-}
-
-.box-bordeaux,
-.box-grey {
-  // On full width items the container needs padding
-  &.width-full {
-    padding: 100px 0 160px 0;
-  }
-}
-
-
 // ----- CTA Styles -----
 .cta {
   @include cta();
 }
 
-.cta-light {
-  @include cta('light');
+.cta-main {
+  display: inline-block;
+  padding: 10px 60px 10px 20px;
+  font-size: 14px;
+  border: 1px solid $color-green;
+  border-radius: 2px;
 }
 
+
+.cta-outline-black {
+  @include cta("outline-black");
+}
+
+.cta-outline-white {
+  @include cta("outline-white");
+}
 
 // ----- TEXT Styles -----
 .center {
   text-align: center;
 }
 
-.copy-lead {
-  @include copy-lead();
-  display: block;
-  margin-bottom: 18px;
+.underline {
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: $color-green;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+  }
 }
 
-.overline {
-  @include overline();
-  display: block;
-  margin-bottom: 18px;
+.nav-item {
+  display: inline;
+
+  // nav 'phone' item
+  &--phone {
+    margin-right: 40px;
+    padding-left: 30px;
+    background: sassvg("phone-solid", $color-white) no-repeat left;
+    color: $color-green;
+  }
+
+  // nav 'mail' item
+  &--mail {
+    padding-left: 30px;
+    background: sassvg("envelope-solid", $color-white) no-repeat left;
+
+    .mail_me {
+      font-weight: $font-weight-regular;
+      color: $color-green;
+      transition: 0.2s;
+
+      &:hover {
+        transition: 0.2s;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-item {
+  // nav 'phone' item
+  &--phone {
+    padding-left: 30px;
+    background: sassvg("phone-solid", $color-black) no-repeat left;
+    background-size: 18px;
+  }
+
+  // nav 'mail' item
+  &--mail {
+    padding-left: 30px;
+    background: sassvg("envelope-solid", $color-black) no-repeat left;
+    background-size: 18px;
+
+    .mail_me {
+      font-weight: $font-weight-regular;
+      transition: 0.2s;
+      color: $color-black;
+
+      &:hover {
+        transition: 0.2s;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// SOCIAL ICONS
+.social-link {
+  padding: 3px 3px 3px 30px;
+
+  &--facebook {
+    background: sassvg("facebook-square-brands", $color-black) no-repeat left;
+  }
+
+  &--instagram {
+    background: sassvg("instagram-square-brands", $color-black) no-repeat left;
+  }
+
+  &--linkedin {
+    background: sassvg("linkedin-brands", $color-black) no-repeat left;
+  }
+
+  &--github {
+    background: sassvg("github-square-brands", $color-black) no-repeat left;
+  }
 }
 
 .list-checkmark {
@@ -59,8 +126,7 @@
     position: relative;
 
     &:before {
-      content: '';
-      //background: sassvg("Icon-check", $color-green);
+      content: "";
       width: 20px;
       height: 20px;
       position: absolute;
@@ -69,9 +135,25 @@
   }
 }
 
-// Adds scroll for tables on mobile and tablet
-.table-wrap {
-  @include until($desktop) {
-    @include horizontal-scroll();
+/*
+<a class="cta-main-arrow">
+    Pogledajte više o nama
+    <span class="link-arrow"></span>
+</a>
+ */
+.cta-main-arrow {
+  @extend .cta-main;
+  @include linkWithArrowExtend;
+}
+
+.cta-main-arrow-invert {
+  @extend .cta-main;
+  @include linkWithArrowExtend(null,null,true);
+}
+
+// On hover link extend arrow
+a:hover {
+  .link-arrow {
+    width: 25px;
   }
 }

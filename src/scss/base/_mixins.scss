@@ -1,7 +1,6 @@
 @import "../constants";
 
 // ----- MEDIA QUERIES -----
-
 @mixin until($width) {
   // until ($tablet), exception for mobile query
   @if ($width == 768) {
@@ -64,174 +63,155 @@
   }
 }
 
-
-// ----- BOXES -----
-
-@mixin box-bordeaux() {
-  @include box(
-                  $background-color-red,
-                  '',
-                  0,
-                  25px
-  )
-}
-
-@mixin box-grey() {
-  @include box(
-                  $color-grey-light,
-                  '',
-                  $box-radius,
-                  25px
-  )
-}
-
-@mixin box-white() {
-  @include box(
-                  $color-white,
-                  1px solid $color-grey-middle,
-                  $box-radius,
-                  25px
-  )
-}
-
-// Do not call directly
-@mixin box(
-  $background,
-  $border,
-  $border-radius,
-  $padding,
-) {
-  background-color: $background;
-  border: $border;
-  border-radius: $border-radius;
-  padding: $padding;
-}
-
-
 // ----- CTA -----
-
-@mixin cta(
-  $is-light: ''
-) {
+@mixin cta($is-light: "") {
   display: inline-block;
-  margin: 20px 20px 20px 0;
-  padding: 10px 20px;
+  padding: 20px 60px;
+  margin: 10px;
   border-radius: $box-radius;
   font-weight: $font-weight-medium;
   text-decoration: none;
   transition: background-color 250ms;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
 
-  @if $is-light != 'light' {
-    background-color: $color-red;
+  @if $is-light != "outline" {
+    background-color: $color-green;
     color: $color-white;
 
-    &:visited,
-    &:hover {
+    &:visited {
       color: $color-white;
-      background-color: $color-bordeaux;
+      background-color: $color-green;
+    }
+
+    &:hover {
+      background: $color-green-dark;
     }
 
     &:active {
       color: $color-white;
-      background-color: $color-red;
+      background-color: $color-green;
     }
   }
 
-  @if $is-light == 'light' {
-    background-color: $color-white;
-    color: $color-red;
+  @if $is-light == "outline-black" {
+    background-color: transparent;
+    color: $color-typography;
+    padding: 10px 35px;
+    border: 2px solid $color-green;
 
-    &:visited,
+    &:visited {
+      color: $color-black;
+    }
     &:hover {
-      background-color: $color-grey-light;
-      color: $color-bordeaux;
+      background-color: $color-green;
+      color: $color-white;
+    }
+
+
+    &:active {
+      background-color: transparent;
+      color: $color-black;
+    }
+  }
+
+  @if $is-light == "outline-white" {
+    background-color: transparent;
+    color: $color-white;
+    padding: 10px 35px;
+    border: 2px solid $color-green;
+
+    &:visited {
+      background-color: transparent;
+      color: $color-white;
     }
 
     &:active {
-      background-color: $color-grey-light;
-      color: $color-red;
+      background-color: transparent;
+      color: $color-white;
+    }
+    &:hover {
+      background: $color-green;
     }
   }
-
 }
-
 
 // ----- GRID SETTINGS -----
 @mixin grid-gap() {
   grid-column-gap: $gutter-mobile;
+
   @include between($tablet, $desktop) {
     grid-column-gap: $gutter-tablet;
   }
+
   @include from($desktop) {
     grid-column-gap: $gutter-desktop;
   }
 }
 
 
-// ----- STYLES -----
+@mixin linkWithArrowExtend(
+  $arrowColor: $color-black,
+  $fontColor: $color-text-base,
+  $invert: null
+) {
 
-@mixin copy-lead() {
-  font-family: $font-head;
-  font-size: 22px;
-  font-weight: $font-weight-regular;
-  line-height: 32px;
-  @include from($tablet) {
+  display: inline-block;
+  position: relative;
+  //padding-right: 60px;
+  color: $color-text-base;
+  @if $invert {
+    color: $color-white;
+    border: 1px solid $color-white;
   }
-  .invert & {
-    color: $color-typography-invert;
-  }
-}
+  font-family: $font-copy;
+  text-decoration: none;
 
-@mixin overline() {
-  font-family: $font-head;
-  font-size: 14px;
-  font-weight: $font-weight-semibold;
-  line-height: 17px;
-  color: $color-text-soft;
-  letter-spacing: 2.1px;
-  text-transform: uppercase;
-  @include from($tablet) {
-  }
-  .invert & {
-    color: $color-typography-invert;
-  }
-}
-
-@mixin rounded-corners() {
-  img {
-    border-radius: $box-radius;
-  }
-}
-
-@mixin horizontal-scroll() {
-  overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    -webkit-appearance: none;
-  }
-
-  &::-webkit-scrollbar:vertical {
-    width: 8px;
-
-    @include from($desktop) {
-      height: 12px;
+  .link-arrow {
+    display: inline-block;
+    position: absolute;
+    left: calc(100% - 55px);
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    width: 20px;
+    height: 1px;
+    vertical-align: middle;
+    transition: all 0.2s;
+    background-color: $arrowColor;
+    @if $invert {
+      background-color: $color-white;
     }
-  }
 
-  &::-webkit-scrollbar:horizontal {
-    height: 8px;
-
-    @include from($desktop) {
-      height: 12px;
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 8px;
+      height: 1px;
+      right: -1px;
+      top: -3px;
+      background-color: $arrowColor;
+      @if $invert {
+        background-color: $color-white;
+      }
+      transform: rotate(45deg);
     }
-  }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: $color-grey-dark;
-    border-radius: 12px;
-  }
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: -1px;
+      width: 8px;
+      height: 1px;
+      top: 3px;
+      background-color: $arrowColor;
+      @if $invert {
+        background-color: $color-white;
+      }
+      transform: rotate(-45deg);
+    }
 
-  &::-webkit-scrollbar-track {
-    background-color: $color-grey-light;
   }
 }

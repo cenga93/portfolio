@@ -1,38 +1,58 @@
-<header id="header-desktop" class="header-desktop show-from-tablet width-full header-desktop-root">
-    <div class="header-desktop--container width-xl">
-        <!-- BEGIN: header-desktop top -->
-        <div class="header-desktop--container-inner--top">
-            <ul class="header-desktop--topnav">
-                <li class="header-desktop--topnav--item header-desktop--topnav--item--phone">
-                    +381 62 97 14 555
-                </li>
-                <li class="header-desktop--topnav--item header-desktop--topnav--item--mail">
-                    <a href="mailto:cenga93@gmail.com" class="mail_me">cenga93@gmail.com</a>
-                </li>
-            </ul>
-        </div>
-        <!-- END: header-desktop top -->
-        <!-- BEGIN: header-desktop bottom -->
-        <div class="header-desktop--container-inner--bottom">
-
-            <!-- INCLUDE:  _includes_logo -->
-            <%- include('_includes_logo') %>
-
-            <div class="header-desktop--mainnav nav-horizontal">
-                <nav class="header-desktop--mainnavigation">
-                    <ul class="header-desktop--mainnavigation-list">
-                        <li class="header-desktop--mainnavigation-item">Home</li>
-                        <li class="header-desktop--mainnavigation-item">About</li>
-                        <li class="header-desktop--mainnavigation-item">Services</li>
-                        <li class="header-desktop--mainnavigation-item">Blog</li>
-                        <li class="header-desktop--mainnavigation-item">Contact</li>
-                    </ul>
-                </nav>
+<header id="header-desktop" class="header-desktop show-from-tablet width-full">
+    <div class="header-desktop--container">
+        <div class="header-desktop--container-inner width-xl">
+            <!-- BEGIN: header-desktop top -->
+            <div class="header-desktop--container-inner--top">
+                <ul class="header-desktop--topnav">
+                    <li class="nav-item nav-item--phone">
+                        +381 62 97 14 555
+                    </li>
+                    <li class="nav-item nav-item--mail">
+                        <a href="mailto:cenga93@gmail.com"
+                           class="mail_me">cenga93@gmail.com</a>
+                    </li>
+                </ul>
             </div>
-            <div class="header-desktop--search">
-                <input type="text" placeholder="Search">
+            <!-- END: header-desktop top -->
+            <!-- BEGIN: header-desktop bottom -->
+            <div class="header-desktop--container-inner--bottom">
+
+                <!-- INCLUDE:  _includes_logo -->
+                <%- include('_includes_logo') %>
+
+                <div class="header-desktop--mainnav">
+                    <nav class="header-desktop--mainnavigation">
+                        <ul class="header-desktop--mainnavigation-list">
+                            <li class="header-desktop--mainnavigation-item">
+                                <a class="header-desktop--mainnavigation--link header-desktop--mainnavigation--link--active"
+                                   href="">Home</a>
+                            </li>
+                            <li class="header-desktop--mainnavigation-item">
+                                <a class="header-desktop--mainnavigation--link"
+                                   href="">About</a>
+                            </li>
+                            <li class="header-desktop--mainnavigation-item">
+                                <a class="header-desktop--mainnavigation--link"
+                                   href="">Services</a>
+                            </li>
+                            <li class="header-desktop--mainnavigation-item">
+                                <a class="header-desktop--mainnavigation--link"
+                                   href="">Blog</a>
+                            </li>
+                            <li class="header-desktop--mainnavigation-item">
+                                <a class="header-desktop--mainnavigation--link"
+                                   href="">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-desktop--search">
+                    <input class="header-desktop--search-field"
+                           placeholder="Search"
+                           type="search">
+                </div>
             </div>
+            <!-- END: header-desktop bottom -->
         </div>
-        <!-- END: header-desktop bottom -->
     </div>
 </header>

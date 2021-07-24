@@ -1,12 +1,12 @@
 {
-  "proxy": "https://dev.portfolio.rs/",
+  "proxy": "http://localhost:3000/",
   "debug": true,
   "path": {
     "nodePath": "./node_modules/",
     "distPath": "./dist/"
   },
   "browserSync": {
-    "target": "https://dev.portfolio.rs/"
+    "target": "http://localhost:3000/"
   },
   "sassOptions": {
     "sourceMap": "sass",

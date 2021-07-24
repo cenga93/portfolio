@@ -57,45 +57,39 @@ $gutter-tablet: 32px;
 $gutter-desktop: 40px;
 
 // Fonts
-$font-head: 'Fira Sans', sans-serif;
-$font-copy: 'Fira Sans', sans-serif;
+$font-head: "Montserrat", sans-serif;
+$font-copy: "Montserrat", sans-serif;
 
+$font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
+$font-weight-medium: normal;
+$font-weight-semibold: bold;
 
 $font-size: 16px;
 //$font-size-large: 22px;
-//$font-size-small: 11px;
+$font-size-small: 14px;
 
 $line-height: 1.5;
 $line-height-headline: 1.2;
 
-
 // Main colors
 $color-typography: #0a0a0a;
+$color-black: #262626;
 $color-typography-invert: #fff;
 $color-white: #fff;
-
 $color-red: #9b1c20;
 $color-bordeaux: #6c181c;
-
-$color-grey-light: #edeae6;
-
+$color-grey-light: #cccccc;
 $color-grey-middle: #b4aca6;
-
-$color-grey-dark: #867f7c;
-$color-grey-mustard: #E7BB27;
-
-$color-green: #2f8e71;
-
-$color-grey-headerbackground: #DBD5CD;
-
+$color-grey-dark: #626262;
+$color-green: #5ba122;
+$color-green-dark: #427517;
+$color-grey-headerbackground: #dbd5cd;
 
 // Text colors
 $color-text-base: $color-typography; // Main Text color
 $color-text-soft: $color-grey-dark; // Soft warm grey
-$color-text-link: $color-red;
+$color-text-link: $color-white;
 $color-text-hover: $color-bordeaux;
 
 // Border Colors
@@ -103,9 +97,7 @@ $color-border-soft: $color-grey-middle;
 $color-border-table: $color-grey-middle;
 
 // Border Radius
-$box-radius: 4px;
-
-
+$box-radius: 2px;
 
 $background-color-grey: $color-grey-light;
 $background-color-grey-dark: $color-grey-dark;

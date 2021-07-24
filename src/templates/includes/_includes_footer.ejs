@@ -1,70 +1,90 @@
-<footer class="footer">
-    <div class="footer--container-top width-full">
-        <div class="footer--container-inner width-xl">
+<footer class="footer width-full">
+    <div class="footer--container">
+        <div class="footer--container-inner">
+            <!-- BEGIN: footer--container-top -->
+            <div class="footer--container-top width-xl">
+                <!-- BEGIN: footer-info -->
+                <div class="footer--info">
 
-            <!-- INCLUDE:  _includes_mobilelogo -->
-            <%- include('_includes_mobile_logo') %>
-            
-            <!-- BEGIN: footer-info -->
-            <div class="footer--info">
-                <!-- Contact -->
-                <ul class="footer--info--list">
-                    <li class="footer--info--item">Contact</li>
-                    <li class="footer--info--item">+(0)93 597 25 4871</li>
-                    <li class="footer--info--item">katelynn.orn@hotmail.com</li>
-                    <li class="footer--info--item">
-                        5523 Research Park Drive, Suite 110 <br>
-                        San Diego, DK 25441
-                    </li>
-                </ul>
-                <!-- Navigation -->
-                <ul class="footer--info--list">
-                    <li class="footer--info--item">Navigation</li>
+                    <!-- Logo wrappe -->
+                    <div class="footer-logo-wrapper">
+                        <!-- INCLUDE:  _includes_mobilelogo -->
+                        <%- include('_includes_logo_footer') %>
+                    </div>
 
-                    <li class="footer--info--item">
-                        <a href="" class="footer--info--link">Home</a>
-                    </li>
+                    <!-- Contact -->
+                    <ul class="footer--info--list">
+                        <li class="footer--info--item">Contact</li>
+                        <li class="footer-item--phone">+(0)93 597 25 4871</li>
+                        <li class="footer-item--mail">
+                            <a href="mailto:cenga93@gmail.com"
+                               class="mail_me">
+                                cenga93@gmail.com
+                            </a>
+                        </li>
+                    </ul>
 
-                    <li class="footer--info--item">
-                        <a href="" class="footer--info--link">About</a>
-                    </li>
-                    <li class="footer--info--item">
-                        <a href="" class="footer--info--link">Service</a>
-                    </li>
+                    <!-- Navigation -->
+                    <ul class="footer--info--list">
+                        <li class="footer--info--item">Navigation</li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link" href="">Home</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link" href="">About</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link" href="">Service</a>
+                        </li>
+                    </ul>
 
+                    <!-- Service -->
+                    <ul class="footer--info--list">
+                        <li class="footer--info--item">Service</li>
+                        <li class="footer--info--item">
+                            <a href="" class="footer--info--link">Home</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a href="" class="footer--info--link">About</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a href="" class="footer--info--link">Service</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a href="" class="footer--info--link">Blog</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a href="" class="footer--info--link">Contact</a>
+                        </li>
+                    </ul>
 
-                    <li class="footer--info--item">Blog</li>
-                    <li class="footer--info--item">Contact</li>
-                </ul>
-                <!-- Service -->
-                <ul class="footer--info--list">
-                    <li class="footer--info--item">Service</li>
-                    <li class="footer--info--item">Home</li>
-                    <li class="footer--info--item">About</li>
-                    <li class="footer--info--item">Service</li>
-                    <li class="footer--info--item">Blog</li>
-                    <li class="footer--info--item">Contact</li>
-                </ul>
-
-                <!-- Social media -->
-                <ul class="footer--info--list">
-                    <li class="footer--info--item">Social media</li>
-                    <li class="footer--info--item">
-                        <a href="">Facebook</a>
-                    </li>
-                    <li class="footer--info--item">
-                        <a href="">Twitter</a>
-                    </li>
-                </ul>
+                    <!-- Social media -->
+                    <ul class="footer--info--list">
+                        <li class="footer--info--item">Social media</li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link social-link social-link--facebook" href="">Facebook</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link social-link social-link--instagram" href="">Instagram</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link social-link social-link--linkedin" href="">Linkedin</a>
+                        </li>
+                        <li class="footer--info--item">
+                            <a class="footer--info--link social-link social-link--github" href="">Github</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END: footer-info -->
             </div>
-            <!-- END: footer-info -->
-        </div>
-        <!-- BEGIN: footer--container-bottom -->
-        <div class="footer--container-bottom">
-            <div class="width-xl footer--container-bottom-wrapper">
-                <p>&copy; All right reserved. </p>
+            <!-- END:footer--container-top -->
+            <!-- BEGIN: footer--container-bottom -->
+            <div class="footer--container-bottom">
+                <div class="footer--container-bottom-wrapper width-xl">
+                    <p class="footer-copy">&copy; All right reserved. </p>
+                </div>
             </div>
+            <!-- END: footer--container-bottom -->
         </div>
-        <!-- END: footer--container-bottom -->
     </div>
 </footer>
