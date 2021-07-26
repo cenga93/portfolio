@@ -36,6 +36,7 @@
   display: inline-block;
 }
 
+// Main navigation | a
 .header-desktop--mainnavigation--link {
   position: relative;
   margin-right: 30px;
@@ -45,23 +46,23 @@
     position: absolute;
     width: 0;
     height: 3px;
-    background: $color-green;
     bottom: -4px;
     left: 0;
     right: 0;
     transition: 0.3s;
+    background: $color-green;
   }
 
   &--active {
     &:after {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 3px;
-      background: $color-green;
-      bottom: -4px;
       left: 0;
       right: 0;
+      width: 100%;
+      bottom: -4px;
+      height: 3px;
+      background: $color-green;
       transition: 0.3s;
     }
   }

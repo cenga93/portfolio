@@ -1,9 +1,16 @@
 .last-projects {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
-.last-projects--headline{
+.last-projects--headline {
   margin-bottom: 50px;
+  position: relative;
+  @extend .underline;
+
+  &:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .last-projects--content {
@@ -13,10 +20,11 @@
 
   @include from($desktop) {
     display: grid;
-    @include grid-gap;
     grid-template-columns: repeat(2, 1fr);
+    @include grid-gap;
   }
 }
+
 
 // Left column
 .last-projects--column-left {
@@ -87,6 +95,7 @@
   margin: 1px;
   outline: 1px solid $color-grey-light;
   padding: 20px 30px;
+
   .cta-outline-black {
     margin: 0;
   }
@@ -103,11 +112,8 @@
 
 //  Right column
 .last-projects--column-right {
-  grid-gap: 30px;
-  @include from($mobile) {
-    display: inherit;
-  }
-
+  display: grid;
+  grid-gap: 40px;
 
   @include from($tablet) {
     grid-gap: 10px;

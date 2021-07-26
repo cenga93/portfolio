@@ -23,14 +23,14 @@
 
 $widths: "xxs" $width-xxs, "xs" $width-xs, "s" $width-s, "m" $width-m, "l" $container-max-width,
   // $width-l,
-  "xl" $container-max-width,
+"xl" $container-max-width,
   // $width-xl,
-  "xxl" $container-max-width; // $width-xxl;
+"xxl" $container-max-width; // $width-xxl;
 
 $margins: "xxs" $margin-xxs, "xs" $margin-xs, "s" $margin-s, "m" $margin-m, "l" $margin-l, "xl" $margin-xl, "xxl" $margin-xxl;
 
 $mq: "mobile-small" $mobile-small, "mobile" $mobile, "tablet" $tablet, "desktop" $desktop, "desktop-large" $desktop-large,
-  "wide-screen" $wide-screen, "ultra-wide-screen" $ultra-wide-screen;
+"wide-screen" $wide-screen, "ultra-wide-screen" $ultra-wide-screen;
 
 @each $name, $width in $widths {
   .width-#{$name} {

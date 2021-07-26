@@ -65,9 +65,9 @@ gulp.task("sass", function () {
   let ignoreCondition = "!**/*critical*";
   let stream = gulp
     .src([
-        "./src/scss/main.scss",
         "./src/scss/_constants.scss",
-        "./src/scss/pages/*.scss"
+        "./src/scss/pages/*.scss",
+        "./src/scss/main.scss"
     ], {
       allowEmpty: true,
     })
@@ -240,7 +240,10 @@ gulp.task("js", function () {
   let ignoreCondition = "!**/*critical*";
 
   let stream = gulp
-    .src(["./src/js/main/*", "./src/js/main.js"], {
+    .src([
+        "./src/js/main/**/*",
+        "./src/js/main.js"
+    ], {
       allowEmpty: true,
     })
     .pipe(gulpIgnore.include(ignoreCondition))

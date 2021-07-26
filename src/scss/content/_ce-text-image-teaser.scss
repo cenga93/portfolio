@@ -2,7 +2,6 @@
 .text-image-teaser--container-inner {
   display: grid;
   grid-gap: 50px;
-  padding: 70px 0;
 
   @include from($tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -36,18 +35,12 @@
   &:after {
     content: "";
     position: absolute;
-    top: -15px;
-    bottom: -15px;
-    right: -15px;
+    top: -20px;
+    bottom: -20px;
+    right: -20px;
     left: 25%;
     z-index: -1;
     border: 2px solid $color-green;
-
-    @include from($desktop) {
-      top: -30px;
-      bottom: -30px;
-      right: -30px;
-    }
   }
 
   // Image
@@ -55,3 +48,6 @@
     display: block;
   }
 }
+
+
+

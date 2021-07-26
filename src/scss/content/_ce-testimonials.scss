@@ -1,0 +1,99 @@
+// Testimonials section
+.testimonials {
+  margin: 0 -24px;
+  padding: 40px 24px 60px 24px;
+  background-color: $color-grey-light;
+
+  @include from($mobile) {
+    margin: 0 -32px;
+    padding: 40px 32px 80px 32px;
+  }
+
+  @include from($desktop) {
+    margin: 0 -40px;
+    padding: 40px 40px 80px 40px;
+  }
+}
+
+// Testimonials | container inner
+.testimonials--container-inner {
+  .splide__slide {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      background: $color-green;
+      opacity: 0;
+      transition: .4s;
+    }
+
+    // Hover on slick item
+    &:hover {
+      .splide--image {
+        transform: scale(1.1);
+        transition: .4s;
+      }
+
+      &:after {
+        opacity: .9;
+      }
+
+      .testimonials--content {
+        top: 10%;
+      }
+    }
+
+    // Image inside slider item
+    .splide--image {
+      transition: .4s;
+    }
+  }
+}
+
+// Testimonials | headline
+.testimonials--headline {
+  position: relative;
+  margin-bottom: 60px;
+  @extend .underline;
+
+  &:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// Content wrapper inside slider item
+.testimonials--content {
+  position: absolute;
+  padding: 10px 50px;
+  top: 100%;
+  transition: .4s;
+  left: 0;
+  z-index: 1; // display front green background
+
+  & * {
+    color: $color-white;
+  }
+}
+
+// Testimonials | single slider item
+.testimonials--splide {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    content: "";
+    border: 2px solid $color-green;
+  }
+}

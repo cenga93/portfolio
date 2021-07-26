@@ -45,6 +45,11 @@ textarea {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+section{
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
 .invert {
   color: $color-typography-invert;
 }

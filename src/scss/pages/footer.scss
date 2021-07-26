@@ -1,5 +1,4 @@
 @import "../_constants";
-@import "../base/base_critical";
 @import "../base/base_main";
 
 .footer {
@@ -18,11 +17,12 @@
   }
 }
 
-// Footer botton
+// Footer bottom
 .footer--container-bottom {
+  display: none;
   padding: 10px 32px;
-  border-top: 1px solid $color-white;
-  margin: 0 -32px;
+  border-top: 1px solid #fff;
+  //margin: 0 -40px;
 
   p {
     margin: 0;

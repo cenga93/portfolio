@@ -9,7 +9,6 @@
     "target": "http://localhost:3000/"
   },
   "sassOptions": {
-    "sourceMap": "sass",
     "sourceComments": "map",
     "outputStyle": "nested"
   }
