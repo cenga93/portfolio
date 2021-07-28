@@ -10,6 +10,19 @@
 
   &--headline {
     margin-bottom: 20px;
+    padding: 0 20px;
+
+    @include until($tablet){
+      font-size: 36px;
+    }
+  }
+
+  &--description{
+    display: none;
+
+    @include from(375px){
+      display: block;
+    }
   }
 }
 

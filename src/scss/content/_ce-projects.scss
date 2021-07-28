@@ -1,0 +1,36 @@
+.projects {
+
+}
+
+// Projects | main container
+.projects--container {
+
+}
+
+.projects--headline {
+  position: relative;
+  margin-bottom: 60px;
+  @extend .underline;
+
+  &:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// Projects | container inner
+.projects--container-inner {
+  padding: 20px 0;
+}
+
+.projects--boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.projects--single-project {
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+

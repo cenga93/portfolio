@@ -25,7 +25,6 @@
   }
 }
 
-
 // Left column
 .last-projects--column-left {
   @include from($desktop-large) {
@@ -52,6 +51,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
+  height: 100%; // is must
 
   .cta-main-arrow-invert {
     position: absolute;
@@ -89,6 +89,13 @@
   img {
     transition: 0.5s;
   }
+}
+
+.last-projects--small-text{
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  background: sassvg("calendar-solid", $color-green) no-repeat left;
 }
 
 .last-projects--left-content-box {
@@ -130,5 +137,20 @@
 }
 
 .last-projects--right-image-box {
+  overflow: hidden;
   border: 1px solid $color-grey-light;
+
+  &:hover{
+    img{
+      transition: .5s;
+      transform: scale(1.1);
+    }
+  }
+  img{
+    transition: .5s;
+  }
+}
+
+.last-projects--right-content-box{
+  padding: 10px 0;
 }

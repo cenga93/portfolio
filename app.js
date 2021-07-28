@@ -11,9 +11,6 @@ dotenv.config();
 
 // import routes
 const defaultRouter = require("./src/routes/default");
-// const authRouter = require('./src/routes/auth');
-// const ordersRouter = require('./src/routes/orders');
-// const adminRouter = require('./src/routes/admin');
 
 // path
 const __public = path.join(__dirname, "dist");
@@ -34,6 +31,7 @@ app.set("layout", "layout/_default");
 app.use("/css", express.static(path.join(__public, "/css")));
 app.use("/js", express.static(path.join(__public, "/js")));
 app.use("/img", express.static(path.join(__public, "/img")));
+app.use("/files", express.static(path.join(__public, "/files")));
 // app.use('/bootstrap/css', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/css')));
 // app.use('/bootstrap/js', express.static(path.join(__dirname, '/node_modules/bootstrap/dist/js')));
 // app.use('/jq', express.static(path.join(__dirname, '/node_modules/jquery/dist')));

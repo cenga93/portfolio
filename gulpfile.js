@@ -241,6 +241,7 @@ gulp.task("js", function () {
 
   let stream = gulp
     .src([
+        "./src/js/classes/**/*",
         "./src/js/main/**/*",
         "./src/js/main.js"
     ], {

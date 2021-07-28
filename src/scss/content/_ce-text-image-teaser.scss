@@ -1,3 +1,7 @@
+.text-image-teaser {
+  padding-top: 50px;
+}
+
 // Container inner | GRID Layout
 .text-image-teaser--container-inner {
   display: grid;
@@ -15,9 +19,19 @@
   @extend .underline;
 }
 
-// Column left -- CTA
+// Column left -- CTA | Overrider CTA global style
 .text-image-teaser--link {
-  margin-left: 0 !important; // Overrider CTA global style
+  margin: 0;
+  background: sassvg("download-solid", $color-white) no-repeat 35px;
+  background-size: 25px;
+  background-color: $color-green;
+  padding-left: 80px;
+
+  &:hover {
+    background: sassvg("download-solid", $color-white) no-repeat 35px;
+    background-size: 25px;
+    background-color: $color-green-dark;
+  }
 }
 
 // Column left
