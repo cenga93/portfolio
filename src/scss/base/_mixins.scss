@@ -138,14 +138,14 @@
 
 // ----- GRID SETTINGS -----
 @mixin grid-gap() {
-  grid-column-gap: $gutter-mobile;
+  grid-gap: $gutter-mobile;
 
   @include between($tablet, $desktop) {
-    grid-column-gap: $gutter-tablet;
+    grid-gap: $gutter-tablet;
   }
 
   @include from($desktop) {
-    grid-column-gap: $gutter-desktop;
+    grid-gap: $gutter-desktop;
   }
 }
 

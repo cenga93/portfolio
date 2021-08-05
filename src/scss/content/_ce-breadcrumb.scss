@@ -1,0 +1,27 @@
+.breadcrumb {
+  padding: 0;
+}
+
+.breadcrumb--container-inner {
+  margin-top: 20px;
+}
+
+.breadcrumb--item {
+  display: inline;
+
+  &:first-child {
+    padding-right: 15px;
+    margin-right: 12px;
+    background: sassvg("chevron-right-solid", $color-grey-middle) no-repeat right;
+    background-size: 8px;
+  }
+
+  &--last {
+    color: $color-green-dark;
+  }
+}
+
+.breadcrumb--link {
+  font-weight: 300;
+  color: $color-grey-dark;
+}

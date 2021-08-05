@@ -17,6 +17,7 @@
 
 html {
   line-height: $line-height;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -231,7 +232,7 @@ blockquote,
 
   small {
     position: relative;
-    top: -10px;
+    top: -7px;
     font-style: italic;
     color: $color-grey-dark;
   }
@@ -252,7 +253,7 @@ blockquote,
 
   small {
     position: relative;
-    top: -8px;
+    top: -7px;
     font-style: italic;
     font-weight: $font-weight-light;
   }

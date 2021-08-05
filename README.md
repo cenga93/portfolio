@@ -15,12 +15,19 @@ _If you don't have and **node** and **npm**, execute the following command:_
   sudo apt install nodejs
   nodejs -v
   sudo apt install npm
-  sudo npm install --global gulp-cli
+  sudo npm install --global gulp gulp-cli
   ```
 ***
+##Libraries in project
+* Splide slider
+* Pristine form validator
+
 ##Dependesies
 * dotenv
 * ejs
 * express
 * express-ejs-layouts
 * mongoose
+* gulp-cli
+* node-gyp
+* nodemailer

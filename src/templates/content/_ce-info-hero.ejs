@@ -1,0 +1,21 @@
+<section class="info-hero">
+    <div class="info-hero--container">
+        <div class="info-hero--container-inner">
+            <img src="/img/header-info1.jpg"
+                 class="info-hero--image show-from-mobile"
+                 title=""
+                 alt="">
+            <img src="img/header-info-mobile.jpg"
+                 class="info-hero--image hide-from-mobile"
+                 title=""
+                 alt="">
+            <div class="info-hero--wrap">
+                <div class="content width-xl">
+                    <% if (name) { %>
+                        <h2 class="info-hero--headline"><%= name %></h2>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

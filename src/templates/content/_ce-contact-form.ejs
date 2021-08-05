@@ -1,0 +1,93 @@
+<section class="contact-form">
+    <div class="contact-form--container">
+        <div class="contact-form--container-inner width-xl">
+            <form action="/contact"
+                  method="post"
+                  class="contact-form--form">
+                <h3 class="contact-form--headline">Request a quote</h3>
+                <p class="contact-form--description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ea, facere impedit modi neque
+                    nisi non nulla odit velit veniam?
+                </p>
+                <div class="contact-form--content-wrapp">
+                    <!-- First name -->
+                    <div class="contact-form--input-group">
+                        <label for="firstname"
+                               class="contact-form--label">First name</label>
+                        <input data-pristine-required
+                               data-pristine-minlength="3"
+                               data-pristine-minlength-message="Number of characters must be > 2"
+                               data-pristine-type="text"
+                               id="firstname"
+                               name="firstname"
+                               placeholder="Firstname"
+                               class="contact-form--input-field">
+                    </div>
+                    <!-- Last name -->
+                    <div class="contact-form--input-group">
+                        <label for="lastname"
+                               class="contact-form--label">Last name</label>
+                        <input data-pristine-type="text"
+                               data-pristine-required
+                               data-pristine-minlength="3"
+                               data-pristine-minlength-message="Number of characters must be > 2"
+                               id="lastname"
+                               placeholder="Lastname"
+                               class="contact-form--input-field"
+                               name="lastname">
+                    </div>
+                    <!-- Email -->
+                    <div class="contact-form--input-group">
+                        <label for="email"
+                               class="contact-form--label">Email</label>
+                        <input data-pristine-type="email"
+                               data-pristine-required
+                               placeholder="Email address"
+                               class="contact-form--input-field"
+                               id="email"
+                               name="email">
+                    </div>
+                    <!-- Phone -->
+                    <div class="contact-form--input-group">
+                        <label for="phone"
+                               class="contact-form--label">Phone</label>
+                        <input data-pristine-type="text"
+                               data-pristine-required
+                               data-pristine-minlength="7"
+                               data-pristine-minlength-message="Number of characters must be > 6"
+                               placeholder="Phone"
+                               class="contact-form--input-field"
+                               id="phone"
+                               name="phone">
+                    </div>
+                    <!-- Description -->
+                    <div class="contact-form--input-group">
+                        <label for="description"
+                               class="contact-form--label"></label>
+                        <textarea name="description"
+                                  data-pristine-required
+                                  id="description"
+                                  class="contact-form--textarea"
+                                  placeholder="Description"
+                                  rows="7"></textarea>
+                    </div>
+                </div>
+                <button type="submit"
+                        class="contact-form--submit-btn">Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+

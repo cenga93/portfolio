@@ -1,0 +1,25 @@
+<section class="breadcrumb">
+    <div class="breadcrumb--container">
+        <div class="breadcrumb--container-inner width-xl">
+            <ul class="breadcrumb--list">
+                <% breadcrumb.forEach(function(singleBreadcrumb, index) { %>
+                    <% if(index === breadcrumb.length - 1) { %>
+                        <li class="breadcrumb--item breadcrumb--item--last"
+                            itemscope>
+                            <%= singleBreadcrumb.label %>
+                        </li>
+                    <% } else { %>
+                        <li class="breadcrumb--item"
+                            itemscope>
+                            <a class="breadcrumb--link"
+                               href="<%= singleBreadcrumb.url %>">
+                                <%= singleBreadcrumb.label %>
+                            </a>
+                        </li>
+                <% }}); %>
+            </ul>
+        </div>
+    </div>
+</section>
+
+

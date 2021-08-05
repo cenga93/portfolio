@@ -3,42 +3,55 @@
         <div class="projects--container-inner width-l">
             <h2 class="center projects--headline">Rest of my projects</h2>
             <div class="projects--boxes">
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/home_pizza.jpg"
-                         alt=""
-                         title="">
-                </div>
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/landing_page.jpg"
-                         alt=""
-                         title="">
-                </div>
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/yts_torrent.jpg"
-                         alt=""
-                         title="">
-                </div>
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/landing_page.jpg"
-                         alt=""
-                         title="">
-                </div>
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/yts_torrent.jpg"
-                         alt=""
-                         title="">
-                </div>
-                <!--Single project -->
-                <div class="projects--single-project">
-                    <img src="/img/projects/home_pizza.jpg"
-                         alt=""
-                         title="">
-                </div>
+                <% if (projects.length > 0){ %>
+                    <% for (let singleProject of projects){ %>
+                        <!-- Single project -->
+                        <div class="projects--single-project">
+                            <% if (singleProject.img && singleProject.img_original){ %>
+                                <a href="<%= singleProject.img_original %>"
+                                   class="projects--image-link"
+                                   data-fslightbox>
+                                    <img src="<%= singleProject.img %>"
+                                         class="projects--image"
+                                         alt=""
+                                         title="">
+                                </a>
+                            <% } %>
+                            <div class="projects--content">
+                                <div>
+                                    <% if (singleProject.githubLink){ %>
+                                        <% if (singleProject.name){ %>
+                                            <a href="<%= singleProject.githubLink %>" target="_blank">
+                                                <h5 class="projects--content-title">
+                                                    <%= singleProject.name %>
+                                                </h5>
+                                            </a>
+                                    <% }} else { %>
+                                        <a href="<%= singleProject.externalLink %>"
+                                           target="_blank">
+                                            <h5 class="projects--content-title">
+                                                <%= singleProject.name %>
+                                            </h5>
+                                        </a>
+                                    <% } %>
+                                    <% for (let technology of singleProject.technologies){ %>
+                                        <span class="projects--content-badge">
+                                            <%= technology.name %>
+                                        </span>
+                                    <% } %>
+                                </div>
+                                <% if (singleProject.githubLink){ %>
+                                    <a href="<%= singleProject.githubLink %>"
+                                       target="_blank"
+                                       class="projects--link"></a>
+                                <% } else { %>
+                                    <a href="<%= singleProject.externalLink %>"
+                                       target="_blank"
+                                       class="projects--link--external">Website</a>
+                                <% } %>
+                            </div>
+                        </div>
+                <% }} %>
             </div>
         </div>
     </div>

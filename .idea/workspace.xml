@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8248e90c-e2bd-4ed8-8434-ca9a9331efa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/client-satisfacton-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/header-info-mobile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/header-info1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/profile-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/database.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/mail/mail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/projects/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/projects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/main/libs/fslightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/main/libs/pristine.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/content/_ce-breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/content/_ce-client-satisfaction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/content/_ce-contact-form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/content/_ce-contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/content/_ce-info-hero.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/chevron-right-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg/map-marker-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/content/_ce-client-satisfaction.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/content/_ce-contact-form.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/content/_ce-contact.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/content/_ce-info-hero.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/includes/_includes_breadcrumb.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/partials/page/_contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-inspections-ea-ultimate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/critical.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/files/Milan-Milic-CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/files/Milan-Milic-CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Light.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/Montserrat-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/hero/hero_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/hero/hero_mobile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/projects/home_pizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/projects/landing_page.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/projects/yts_torrent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/critical.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/main.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/classes/testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/classes/testimonials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/critical.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/critical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main/form/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main/form/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_constants.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_constants.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/_base_critical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_base_critical.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/_base_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_base_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-last-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-last-projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-text-image-teaser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-text-image-teaser.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/critical/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/critical/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/critical/header_mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/critical/header_mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg/_sassvg-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg/_sassvg-data.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-hero.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-hero.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-last-projects.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-last-projects.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-main-technologies.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-main-technologies.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-projects.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-projects.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-testimonials.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-testimonials.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-text-image-teaser.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-text-image-teaser.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/text.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_divider.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_divider.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_navigation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_navigation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_navigation_mobile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_navigation_mobile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/layout/_default.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/layout/_default.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/page/_index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/page/_index.ejs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1w7xzPjGkBABSnshBxuiruSx8gZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/svg" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/svg" />
+      <recent name="$PROJECT_DIR$/dist/img/projects" />
+      <recent name="$PROJECT_DIR$/dist/img" />
+      <recent name="$PROJECT_DIR$/src/js/main/libs" />
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates/content" />
+      <recent name="$PROJECT_DIR$/dist/img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8248e90c-e2bd-4ed8-8434-ca9a9331efa2" name="Changes" comment="" />
+      <created>1627823691260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627823691260</updated>
+      <workItem from="1627823701386" duration="18995000" />
+      <workItem from="1627903473162" duration="21624000" />
+      <workItem from="1627983094098" duration="33434000" />
+      <workItem from="1628076547582" duration="24098000" />
+      <workItem from="1628122478607" duration="4437000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

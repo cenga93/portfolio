@@ -3,8 +3,102 @@
 
 .footer {
   padding: 0 32px;
-  background: $color-green;
-  color: $color-typography;
+
+  &--green {
+    background: $color-green;
+
+    .footer-copy {
+      color: $color-black;
+    }
+
+    .footer--info--item {
+      &:first-child {
+        color: $color-black;
+
+        &:after {
+          background: $color-black;
+        }
+      }
+    }
+
+    .footer--info--link {
+      color: $color-black;
+    }
+  }
+
+  &--black {
+    background: $color-black;
+
+    .footer-copy {
+      color: $color-white;
+    }
+
+    .footer--info--item {
+      color: red;
+
+      &:first-child {
+        color: $color-white;
+
+        &:after {
+          background: $color-green;
+        }
+      }
+    }
+
+    .footer--info--link {
+      color: $color-grey-middle;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    .social-link {
+      &--facebook {
+        background: sassvg("facebook-square-brands", $color-grey-light) no-repeat left;
+      }
+
+      &--instagram {
+        background: sassvg("instagram-square-brands", $color-grey-light) no-repeat left;
+      }
+
+      &--linkedin {
+        background: sassvg("linkedin-brands", $color-grey-light) no-repeat left;
+      }
+
+      &--github {
+        background: sassvg("github-square-brands", $color-grey-light) no-repeat left;
+      }
+    }
+
+    .footer-item {
+      &--phone {
+        background: sassvg("phone-solid", $color-grey-light) no-repeat left;
+        color: $color-white;
+      }
+
+      &--mail {
+        background: sassvg("envelope-solid", $color-grey-light) no-repeat left;
+
+        .mail_me {
+          color: $color-white;
+        }
+      }
+    }
+
+    .logo--footer {
+      background: sassvg("code-solid", $color-green) no-repeat left 8px;
+      background-size: 35px;
+
+      h4 {
+        color: $color-green;
+      }
+
+      small {
+        color: $color-white;
+      }
+    }
+  }
 }
 
 // Footer top
@@ -19,10 +113,22 @@
 
 // Footer bottom
 .footer--container-bottom {
-  display: none;
-  padding: 10px 32px;
+  padding: 10px 24px;
+  margin-left: -24px;
+  margin-right: -24px;
   border-top: 1px solid #fff;
-  //margin: 0 -40px;
+
+  @include from($mobile) {
+    padding: 10px 32px;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  @include from($desktop) {
+    padding: 10px 40px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
 
   p {
     margin: 0;
@@ -30,7 +136,7 @@
 }
 
 .footer-copy {
-  color: $color-black;
+  color: red;
   font-weight: $font-weight-medium;
   font-size: 12px;
 }
@@ -49,6 +155,7 @@
 
 .footer--info--list {
   padding: 20px 0;
+
   @include from($tablet) {
     padding: 20px 30px;
   }
@@ -76,7 +183,6 @@
 }
 
 .footer--info--link {
-  color: $color-black;
   font-weight: $font-weight-light;
 
   &:hover {

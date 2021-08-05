@@ -18,7 +18,7 @@
   flex-direction: column;
   gap: 30px;
 
-  @include from($desktop) {
+  @include from($mobile) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @include grid-gap;
@@ -39,10 +39,14 @@
     margin-bottom: 40px;
     @extend .underline;
   }
+
+  &--description{
+    font-size: 14px;
+  }
 }
 
 .last-projects--left-image-box {
-  @include until($desktop) {
+  @include until($mobile) {
     display: none;
   }
 }
@@ -94,8 +98,8 @@
 .last-projects--small-text{
   display: block;
   margin-bottom: 10px;
-  padding-left: 30px;
-  background: sassvg("calendar-solid", $color-green) no-repeat left;
+  //padding-left: 30px;
+  //background: sassvg("calendar-solid", $color-green) no-repeat left;
 }
 
 .last-projects--left-content-box {

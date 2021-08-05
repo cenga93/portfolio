@@ -72,7 +72,7 @@
 // Content wrapper inside slider item
 .testimonials--content {
   position: absolute;
-  padding: 10px 50px;
+  padding: 10px 10px 10px 50px;
   top: 100%;
   transition: .4s;
   left: 0;
@@ -80,6 +80,15 @@
 
   & * {
     color: $color-white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 10px;
   }
 }
 

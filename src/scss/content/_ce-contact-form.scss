@@ -1,0 +1,81 @@
+// Contact form | container inner
+.contact-form--container-inner {
+  display: grid;
+
+  @include from($tablet) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+// Contact form | headline
+.contact-form--headline {
+  position: relative;
+  margin-bottom: 40px;
+  @extend .underline;
+  font-weight: bold;
+}
+
+// Contact form | label and input field wrapper
+.contact-form--input-group {
+  display: grid;
+  position: relative;
+
+  &:last-child {
+    @include from($tablet) {
+      grid-column: span 2;
+    }
+  }
+}
+
+.contact-form--input-group {
+  &--danger {
+    .contact-form--input-field,
+    .contact-form--textarea {
+      outline: 1px solid $color-red;
+    }
+  }
+
+  &--success {
+    .contact-form--input-field,
+    .contact-form--textarea {
+      outline: 1px solid $color-green
+    }
+  }
+}
+
+// Contact form | input field
+.contact-form--input-field {
+  padding: 10px 15px;
+  border: 0;
+  outline: 1px solid $color-grey-light;
+}
+
+.pristine-error {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  font-style: italic;
+  color: $color-red;
+}
+
+// Contact form | textare field
+.contact-form--textarea {
+  position: relative;
+  padding: 10px 15px;
+  resize: none;
+  border: 0;
+  outline: 1px solid $color-grey-light;
+}
+
+.contact-form--content-wrapp {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.contact-form--submit-btn {
+  @include cta();
+  margin-left: 0;
+  margin-top: 40px;
+  border: 0;
+  cursor: pointer;
+}

@@ -18,6 +18,10 @@
     <!-- CRITICAL JS -->
     <script src="js/critical.min.js"></script>
     <!--  PAGE TITLE -->
-    <title><%= title %></title>
+    <% if(typeof title !== "undefined") { %>
+        <title><%= title %></title>
+    <% } else { %>
+        <title>Document</title>
+    <% } %>
 </head>
 <body>
