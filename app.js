@@ -2,10 +2,10 @@ const express = require("express");
 const dotenv = require("dotenv");
 const expressLayouts = require("express-ejs-layouts");
 const path = require("path");
-const app = express();
-const PORT = process.env.PORT || 3000;
 const breadcrumb = require('express-url-breadcrumb');
 const connection = require("./src/config/database");
+const PORT = process.env.PORT || 3000;
+const app = express();
 
 // Dotenv init
 dotenv.config({path: "./config.env"});
@@ -16,7 +16,7 @@ connection();
 // use for every request
 app.use(breadcrumb(function (item, index) {
     // convert each breadcrumb label to upper case
-    // item.label = item.label.toUpperCase();
+    // item.devlabel = item.label.toUpperCase();
 }));
 
 // Import routes

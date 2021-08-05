@@ -21,6 +21,7 @@ _If you don't have and **node** and **npm**, execute the following command:_
 ##Libraries in project
 * Splide slider
 * Pristine form validator
+* Fslightbox
 
 ##Dependesies
 * dotenv
@@ -31,3 +32,4 @@ _If you don't have and **node** and **npm**, execute the following command:_
 * gulp-cli
 * node-gyp
 * nodemailer
+* express-url-breadcrumb

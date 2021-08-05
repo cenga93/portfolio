@@ -1,23 +1,10 @@
-.contact {
-
-}
-
-.contact--container {
-
-}
-
 .contact--container-inner {
-
   display: grid;
 
   @include from($tablet) {
     padding: 40px 0;
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.contact--list {
-
 }
 
 .contact--item {
@@ -37,17 +24,13 @@
 
     .mail_me {
       font-weight: $font-weight-regular;
-      color: $color-green;
+      color: $color-black;
       transition: 0.2s;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
   }
 
   &--location {
-    //map-marker-solid
     padding: 10px;
     padding-left: 60px;
     background: sassvg("map-marker-solid", $color-green) no-repeat left;

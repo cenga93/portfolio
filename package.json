@@ -9,6 +9,7 @@
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
     "express-url-breadcrumb": "^1.0.2",
+    "googleapis": "^83.0.0",
     "gulp-cli": "^2.3.0",
     "mongoose": "^5.13.2",
     "node-gyp": "^8.0.0",
@@ -53,7 +54,9 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dev": "nodemon app.js"
   },
   "author": "Milan Milić",
   "license": "ISC"
