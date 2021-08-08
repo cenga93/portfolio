@@ -5,69 +5,39 @@
             <div class="splide testimonials--splide">
                 <div class="splide__track">
                     <div class="splide__list">
-                        <div class="splide__slide">
-                            <div class="splide__slide__container">
-                                <img src="/img/testimonials/client1.jpg"
-                                     class="splide--image"
-                                     data-splide-lazy="/img/testimonials/client1.jpg"
-                                     alt=""
-                                     title="">
-                                <div class="testimonials--content">
-                                    <a href="https://www.linkedin.com/in/zdravko-sokcevic-380b36116/"
-                                       target="_blank">
-                                        <h4>Zdravko Šokčević</h4>
-                                    </a>
-                                    <small>Web Developer</small>
-                                    <p>Profesionalnost u svakom smislu te reči. Fokus na kvalitet i sposobnost za
-                                        detalje bih izdvojio posebno.</p>
-                                </div>
-                            </div>
+                        <% if (typeof testimonials == 'object' && testimonials.length > 0) { %>
+                            <% for (let singleTestimonial of testimonials){ %>
+                                <div class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <% if(singleTestimonial.img) { %>
+                                            <img src="<%= singleTestimonial.img %>"
+                                                 class="splide--image"
+                                                 width="284"
+                                                 height="284"
+                                                 data-splide-lazy="/img/testimonials/client1.jpg"
+                                                 alt=""
+                                                 title="">
+                                        <% } %>
+                                        <div class="testimonials--content">
+                                            <a href="<%= singleTestimonial.link ? singleTestimonial.link: '#' %>"
+                                                    <%= singleTestimonial.link && "class=testimonials--link" %>
+                                               target="_blank">
+                                                <% if(singleTestimonial.name) { %>
+                                                    <h4><%= singleTestimonial.name %></h4>
+                                                <% } %>
+                                            </a>
+                                            <% if(singleTestimonial.position) { %>
+                                                <small><%= singleTestimonial.position %></small>
+                                            <% } %>
 
-                        </div>
-                        <div class="splide__slide">
-                            <div class="splide__slide__container">
-                                <img src="/img/testimonials/client3.jpg"
-                                     class="splide--image"
-                                     data-splide-lazy="/img/testimonials/client3.jpg"
-                                     alt="">
-                                <div class="testimonials--content">
-                                    <h4>Gregor Cano</h4>
-                                    <small>Budget analyst</small>
-                                    <p>Fantastic service and great guy. We recommend to anyone who needs a website or
-                                        web services. Well be using for any further web based services we require!
-                                    </p>
+                                            <% if(singleTestimonial.description) { %>
+                                                <p><%= singleTestimonial.description %></p>
+                                            <% } %>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="splide__slide__container">
-                                <img src="/img/testimonials/fakeuser3.png"
-                                     class="splide--image"
-                                     data-splide-lazy="/img/testimonials/fakeuser3.png"
-                                     title=""
-                                     alt="">
-                                <div class="testimonials--content">
-                                    <h5>nasliv</h5>
-                                    <small>testar</small>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, repellat.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="splide__slide__container">
-                                <img src="/img/testimonials/fakeuser4.png"
-                                     class="splide--image"
-                                     data-splide-lazy="/img/testimonials/fakeuser4.png"
-                                     title=""
-                                     alt="">
-                                <div class="testimonials--content">
-                                    <h5>nasliv</h5>
-                                    <small>testar</small>
-                                    <br>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, repellat.</p>
-                                </div>
-                            </div>
-                        </div>
+
+                        <% }} %>
                     </div>
                 </div>
             </div>

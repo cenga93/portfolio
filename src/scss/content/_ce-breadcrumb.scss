@@ -6,8 +6,8 @@
   display: inline;
 
   &:first-child {
-    padding-right: 15px;
     margin-right: 12px;
+    padding-right: 15px;
     background: sassvg("chevron-right-solid", $color-grey-middle) no-repeat right;
     background-size: 8px;
   }

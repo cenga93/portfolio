@@ -4,18 +4,21 @@
             <div class="header-mobile-top">
                 <!-- INCLUDE:  _includes_logo -->
                 <%- include('_includes_logo') %>
+                <!-- Navigation toggle-->
                 <div class="header-mobile--toggle-box">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <!-- Three span elements will be appended from js. Fix html validator warning -->
                 </div>
             </div>
             <nav class="mobile-nav">
                 <ul>
-                    <li><a href="#">home page</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">location</a></li>
+                    <li class="header-mobile--item">
+                        <!-- INCLUDE:  _includes_logo -->
+                        <%- include('_includes_logo') %>
+                    </li>
+                    <li class="header-mobile--item"><a href="/">Home</a></li>
+                    <li class="header-mobile--item"><a href="/#about">About</a></li>
+                    <li class="header-mobile--item"><a href="/#projects">Projects</a></li>
+                    <li class="header-mobile--item"><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>

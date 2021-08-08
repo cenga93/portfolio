@@ -3,19 +3,22 @@ class ContactValidation {
         const form = document.querySelector(".contact-form--form");
 
         if (form) {
-            // Create the pristine instance
-            const pristine = new Pristine(form, {
+            // Pristine config
+            const config = {
                 classTo: 'contact-form--input-group',
                 errorClass: 'contact-form--input-group--danger',
                 successClass: 'contact-form--input-group--success',
                 errorTextParent: 'contact-form--input-group',
                 errorTextTag: 'span'
-            });
+            }
+
+            // Create the pristine instance
+            const pristine = new Pristine(form, config);
 
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
 
-                // check if the form is valid
+                // Check if the form is valid
                 const valid = pristine.validate(); // returns true or false
 
                 const xhr = new XMLHttpRequest();
@@ -38,7 +41,7 @@ class ContactValidation {
 
                     form.reset();
                 }
-            });
+            }, {passive: true});
         }
     }
 }

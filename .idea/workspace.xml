@@ -2,9 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8248e90c-e2bd-4ed8-8434-ca9a9331efa2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controllers/socialLinks/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/socialLinks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/testimonials/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/testimonials/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/testimonials/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/main/libs/lazyload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/socialLinks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/testimonials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/config.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/critical.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/critical.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/files/Milan-Milic-CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/socialLinks/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/contact-header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/formaideale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/hero/hero_mobile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/hero/hero_mobile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/javascript.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/test123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/textImageTeaser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/tritonex.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/critical.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/critical.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guarded-temple-24319" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/projects/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/projects/getAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/classes/testimonials.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/classes/testimonials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/critical.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/critical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main/form/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main/form/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/base/_base_critical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/_base_critical.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-client-satisfaction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-client-satisfaction.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-divider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-divider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-info-hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-info-hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-last-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-last-projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-testimonials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-text-image-teaser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-text-image-teaser.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/content/_ce-thinks_i_love.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/content/_ce-thinks_i_love.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/critical/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/critical/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/critical/header_mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/critical/header_mobile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/pages/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/pages/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-contact-form.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-contact-form.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-contact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-contact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-hero.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-hero.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-last-projects.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-last-projects.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-main-technologies.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-projects.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-projects.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-testimonials.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-testimonials.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/content/_ce-text-image-teaser.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/content/_ce-text-image-teaser.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_navigation.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_navigation.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_navigation_mobile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_navigation_mobile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/includes/_includes_scripts.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/includes/_includes_scripts.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/partials/page/_index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/partials/page/_index.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +80,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1w7xzPjGkBABSnshBxuiruSx8gZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,20 +106,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/img/illustrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../reworking-master" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js/main/libs" />
       <recent name="$PROJECT_DIR$/dist/img/illustrations" />
       <recent name="$PROJECT_DIR$/src/svg/illustrations" />
       <recent name="$PROJECT_DIR$/src/svg" />
       <recent name="$PROJECT_DIR$/dist/img/projects" />
-      <recent name="$PROJECT_DIR$/dist/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist/img/illustrations" />
@@ -71,7 +142,11 @@
       <workItem from="1627983094098" duration="33434000" />
       <workItem from="1628076547582" duration="24098000" />
       <workItem from="1628122478607" duration="5044000" />
-      <workItem from="1628155540741" duration="17447000" />
+      <workItem from="1628155540741" duration="22888000" />
+      <workItem from="1628199739629" duration="133000" />
+      <workItem from="1628247321656" duration="24728000" />
+      <workItem from="1628340905270" duration="10736000" />
+      <workItem from="1628377237291" duration="626000" />
     </task>
     <servers />
   </component>

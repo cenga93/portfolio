@@ -1,6 +1,5 @@
 .text-image-teaser {
   padding-top: 80px;
-  //padding: 50px 0;
 }
 
 // Container inner | GRID Layout
@@ -23,10 +22,10 @@
 // Column left -- CTA | Overrider CTA global style
 .text-image-teaser--link {
   margin: 0;
+  padding-left: 80px;
   background: sassvg("download-solid", $color-white) no-repeat 35px;
   background-size: 25px;
   background-color: $color-green;
-  padding-left: 80px;
 
   &:hover {
     background: sassvg("download-solid", $color-white) no-repeat 35px;
@@ -48,12 +47,12 @@
   display: block;
 
   &:after {
-    content: "";
     position: absolute;
     top: -20px;
     bottom: -20px;
     right: -20px;
     left: 25%;
+    content: "";
     z-index: -1;
     border: 2px solid $color-green;
   }

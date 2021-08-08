@@ -82,10 +82,6 @@
     color: $color-white;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   small {
     display: block;
     margin-bottom: 10px;
@@ -105,4 +101,8 @@
     content: "";
     border: 2px solid $color-green;
   }
+}
+
+.testimonials--link {
+  text-decoration: underline;
 }

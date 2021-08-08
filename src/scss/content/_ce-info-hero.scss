@@ -1,5 +1,5 @@
 // Info hero | container inner
-.info-hero{
+.info-hero {
   padding-bottom: 0;
 }
 
@@ -18,11 +18,11 @@
 
 // Info hero | page text wrapper
 .info-hero--wrap {
-  padding: 0 40px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 20%;
+  padding: 0 40px;
   color: $color-white;
 }
 
@@ -30,6 +30,7 @@
 .info-hero--headline {
   font-size: 30px;
   color: #fff;
+
 
   @include from(375px) {
     display: block;

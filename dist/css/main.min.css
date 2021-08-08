@@ -578,9 +578,9 @@ a:hover .link-arrow {
 /* line 115, src/scss/pages/footer.scss */
 
 .footer--container-bottom {
-  padding: 10px 24px;
   margin-left: -24px;
   margin-right: -24px;
+  padding: 10px 24px;
   border-top: 1px solid #fff;
 }
 
@@ -613,8 +613,8 @@ a:hover .link-arrow {
 /* line 165, src/scss/pages/footer.scss */
 
 .footer--info--item {
-  margin-bottom: 10px;
   position: relative;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 300;
   color: #262626;
@@ -623,10 +623,10 @@ a:hover .link-arrow {
 /* line 172, src/scss/pages/footer.scss */
 
 .footer--info--item:first-child {
-  color: #262626;
   margin-bottom: 50px;
   font-size: 18px;
   font-weight: bold;
+  color: #262626;
 }
 
 /* line 179, src/scss/pages/footer.scss */
@@ -651,9 +651,9 @@ a:hover .link-arrow {
   /* line 115, src/scss/pages/footer.scss */
 
   .footer--container-bottom {
-    padding: 10px 32px;
     margin-left: -32px;
     margin-right: -32px;
+    padding: 10px 32px;
   }
 
   /* line 144, src/scss/pages/footer.scss */
@@ -687,9 +687,9 @@ a:hover .link-arrow {
   /* line 115, src/scss/pages/footer.scss */
 
   .footer--container-bottom {
-    padding: 10px 40px;
     margin-left: -40px;
     margin-right: -40px;
+    padding: 10px 40px;
   }
 }
 @charset "UTF-8";
@@ -1292,8 +1292,8 @@ a:hover .link-arrow {
 /* line 8, src/scss/content/_ce-breadcrumb.scss */
 
 .breadcrumb--item:first-child {
-  padding-right: 15px;
   margin-right: 12px;
+  padding-right: 15px;
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fas%22%20data-icon%3D%22chevron-right%22%20class%3D%22svg-inline--fa%20fa-chevron-right%20fa-w-10%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28180%2C172%2C166%29%22%20d%3D%22M285.476%20272.971L91.132%20467.314c-9.373%209.373-24.569%209.373-33.941%200l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505%20256%2034.484%20101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373%2024.569-9.373%2033.941%200L285.475%20239.03c9.373%209.372%209.373%2024.568.001%2033.941z%22%2F%3E%3C%2Fsvg%3E) no-repeat right;
   background-size: 8px;
 }
@@ -1324,7 +1324,7 @@ a:hover .link-arrow {
   text-align: center;
 }
 
-/* line 11, src/scss/content/_ce-client-satisfaction.scss */
+/* line 10, src/scss/content/_ce-client-satisfaction.scss */
 
 .client-satisfaction--headline {
   margin: 0;
@@ -1491,9 +1491,9 @@ a:hover .link-arrow {
 /* line 41, src/scss/content/_ce-contact.scss */
 
 .contact--iframe {
-  border: 0;
   width: 100%;
   height: 400px;
+  border: 0;
 }
 
 /* line 47, src/scss/content/_ce-contact.scss */
@@ -1596,13 +1596,13 @@ a:hover .link-arrow {
   padding: 0 20px;
 }
 
-/* line 20, src/scss/content/_ce-hero.scss */
+/* line 19, src/scss/content/_ce-hero.scss */
 
 .hero--description {
   display: none;
 }
 
-/* line 29, src/scss/content/_ce-hero.scss */
+/* line 28, src/scss/content/_ce-hero.scss */
 
 .hero--container-inner {
   display: grid;
@@ -1610,17 +1610,17 @@ a:hover .link-arrow {
   margin: 0 -24px;
 }
 
-/* line 42, src/scss/content/_ce-hero.scss */
+/* line 41, src/scss/content/_ce-hero.scss */
 
 .hero--container-inner .hero--content {
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+  width: 100%;
 }
 
-/* line 50, src/scss/content/_ce-hero.scss */
+/* line 49, src/scss/content/_ce-hero.scss */
 
 .hero--container-inner .hero--content-links {
   display: flex;
@@ -1644,11 +1644,11 @@ a:hover .link-arrow {
 /* line 20, src/scss/content/_ce-info-hero.scss */
 
 .info-hero--wrap {
-  padding: 0 40px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 20%;
+  padding: 0 40px;
   color: #fff;
 }
 
@@ -1665,21 +1665,21 @@ a:hover .link-arrow {
   padding-top: 80px;
 }
 
-/* line 6, src/scss/content/_ce-last-projects.scss */
+/* line 5, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--headline {
-  margin-bottom: 50px;
   position: relative;
+  margin-bottom: 50px;
 }
 
-/* line 11, src/scss/content/_ce-last-projects.scss */
+/* line 10, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--headline:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* line 17, src/scss/content/_ce-last-projects.scss */
+/* line 16, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--content {
   display: flex;
@@ -1687,29 +1687,29 @@ a:hover .link-arrow {
   gap: 30px;
 }
 
-/* line 38, src/scss/content/_ce-last-projects.scss */
+/* line 37, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--headline {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* line 44, src/scss/content/_ce-last-projects.scss */
+/* line 43, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--description {
   font-size: 14px;
 }
 
-/* line 55, src/scss/content/_ce-last-projects.scss */
+/* line 54, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link {
   position: relative;
   display: flex;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
 }
 
-/* line 61, src/scss/content/_ce-last-projects.scss */
+/* line 60, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link .cta-main-arrow-invert {
   position: absolute;
@@ -1720,7 +1720,7 @@ a:hover .link-arrow {
   padding: 30px;
 }
 
-/* line 70, src/scss/content/_ce-last-projects.scss */
+/* line 69, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link::after {
   position: absolute;
@@ -1734,96 +1734,102 @@ a:hover .link-arrow {
   opacity: 0;
 }
 
-/* line 83, src/scss/content/_ce-last-projects.scss */
+/* line 82, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link:hover:after {
   transition: opacity 0.5s;
   opacity: 1;
 }
 
-/* line 88, src/scss/content/_ce-last-projects.scss */
+/* line 87, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link:hover img {
   transition: 0.5s;
   transform: scale(1.05);
 }
 
-/* line 94, src/scss/content/_ce-last-projects.scss */
+/* line 93, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link img {
   transition: 0.5s;
 }
 
-/* line 99, src/scss/content/_ce-last-projects.scss */
+/* line 98, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--small-text {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 106, src/scss/content/_ce-last-projects.scss */
+/* line 103, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left-content-box {
   margin: 1px;
+  padding: 15px 20px;
   outline: 1px solid #cccccc;
-  padding: 20px 30px;
 }
 
-/* line 111, src/scss/content/_ce-last-projects.scss */
+/* line 108, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left-content-box .cta-outline-black {
   margin: 0;
 }
 
-/* line 116, src/scss/content/_ce-last-projects.scss */
+/* line 113, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-link {
+  display: block;
+  margin-top: 10px;
   font-weight: 300;
   color: #626262;
   font-size: 14px;
-  display: block;
   text-decoration: underline #729c01;
-  margin-top: 10px;
 }
 
-/* line 126, src/scss/content/_ce-last-projects.scss */
+/* line 123, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--column-right {
   display: grid;
   grid-gap: 40px;
 }
 
-/* line 135, src/scss/content/_ce-last-projects.scss */
+/* line 132, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-item {
   display: grid;
   grid-gap: 20px;
 }
 
-/* line 144, src/scss/content/_ce-last-projects.scss */
+/* line 141, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box {
   overflow: hidden;
   border: 1px solid #cccccc;
 }
 
-/* line 149, src/scss/content/_ce-last-projects.scss */
+/* line 146, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box:hover img {
   transition: .5s;
   transform: scale(1.1);
 }
 
-/* line 154, src/scss/content/_ce-last-projects.scss */
+/* line 152, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box img {
   transition: .5s;
 }
 
-/* line 159, src/scss/content/_ce-last-projects.scss */
+/* line 156, src/scss/content/_ce-last-projects.scss */
+
+.last-projects--right-image-box a {
+  display: flex;
+}
+
+/* line 161, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-content-box {
-  padding: 10px 0;
+  padding-top: 15px;
 }
 
 /* line 1, src/scss/content/_ce-projects.scss */
@@ -1859,16 +1865,16 @@ a:hover .link-arrow {
   grid-gap: 24px;
 }
 
-/* line 35, src/scss/content/_ce-projects.scss */
+/* line 34, src/scss/content/_ce-projects.scss */
 
 .projects--image-link {
+  position: relative;
   display: flex;
   overflow: hidden;
-  position: relative;
   box-shadow: 0px 0px 6px 1px #00000026;
 }
 
-/* line 41, src/scss/content/_ce-projects.scss */
+/* line 40, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:after {
   position: absolute;
@@ -1882,27 +1888,27 @@ a:hover .link-arrow {
   transition: .4s;
 }
 
-/* line 54, src/scss/content/_ce-projects.scss */
+/* line 53, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:hover .projects--image {
   transition: .4s;
   transform: scale(1.05);
 }
 
-/* line 59, src/scss/content/_ce-projects.scss */
+/* line 58, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:hover:after {
   transition: .4s;
   opacity: .2;
 }
 
-/* line 65, src/scss/content/_ce-projects.scss */
+/* line 64, src/scss/content/_ce-projects.scss */
 
 .projects--image-link .projects--image {
   transition: .4s;
 }
 
-/* line 70, src/scss/content/_ce-projects.scss */
+/* line 69, src/scss/content/_ce-projects.scss */
 
 .projects--content {
   display: grid;
@@ -1910,27 +1916,33 @@ a:hover .link-arrow {
   margin-top: 20px;
 }
 
-/* line 76, src/scss/content/_ce-projects.scss */
+/* line 75, src/scss/content/_ce-projects.scss */
 
 .projects--content-badge {
+  margin-right: 5px;
+  padding: 2px 4px;
   background: #729c01;
   color: #fff;
   border-radius: 3px;
-  padding: 2px 4px;
   font-size: 10px;
-  margin-right: 5px;
 }
 
-/* line 85, src/scss/content/_ce-projects.scss */
+/* line 83, src/scss/content/_ce-projects.scss */
+
+.projects--content-badge--info {
+  background: orange;
+}
+
+/* line 88, src/scss/content/_ce-projects.scss */
 
 .projects--content-title {
-  text-decoration: underline;
-  font-weight: 300;
-  color: #262626;
   font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #262626;
 }
 
-/* line 91, src/scss/content/_ce-projects.scss */
+/* line 95, src/scss/content/_ce-projects.scss */
 
 .projects--link {
   height: 25px;
@@ -1939,13 +1951,13 @@ a:hover .link-arrow {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fab%22%20data-icon%3D%22github-square%22%20class%3D%22svg-inline--fa%20fa-github-square%20fa-w-14%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%2898%2C98%2C98%29%22%20d%3D%22M400%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h352c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zM277.3%20415.7c-8.4%201.5-11.5-3.7-11.5-8%200-5.4.2-33%20.2-55.3%200-15.6-5.2-25.5-11.3-30.7%2037-4.1%2076-9.2%2076-73.1%200-18.2-6.5-27.3-17.1-39%201.7-4.3%207.4-22-1.7-45-13.9-4.3-45.7%2017.9-45.7%2017.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1%200-28.4%201.9-41.6%205.6%200%200-31.8-22.2-45.7-17.9-9.1%2022.9-3.5%2040.6-1.7%2045-10.6%2011.7-15.6%2020.8-15.6%2039%200%2063.6%2037.3%2069%2074.3%2073.1-4.8%204.3-9.1%2011.7-10.6%2022.3-9.5%204.3-33.8%2011.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1%2010.2-1.1%2010.2%2010.8%205%2018.4%2024.2%2018.4%2024.2%209.7%2029.7%2056.1%2019.7%2056.1%2019.7%200%2013.9.2%2036.5.2%2040.6%200%204.3-3%209.5-11.5%208-66-22.1-112.2-84.9-112.2-158.3%200-91.8%2070.2-161.5%20162-161.5S388%20165.6%20388%20257.4c.1%2073.4-44.7%20136.3-110.7%20158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5%201.1-2.8%203-3.2%201.9-.2%203.7.6%203.9%201.9.3%201.3-1%202.6-3%203zm-9.5-.9c0%201.3-1.5%202.4-3.5%202.4-2.2.2-3.7-.9-3.7-2.4%200-1.3%201.5-2.4%203.5-2.4%201.9-.2%203.7.9%203.7%202.4zm-13.7-1.1c-.4%201.3-2.4%201.9-4.1%201.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3%202.4-1.9%204.1-1.5%202%20.6%203.3%202.1%202.8%203.4zm-12.3-5.4c-.9%201.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1%202.8-.9%204.3.6%201.3%201.3%201.8%203.3.9%204.1zm-9.1-9.1c-.9.6-2.6%200-3.7-1.5s-1.1-3.2%200-3.9c1.1-.9%202.8-.2%203.7%201.3%201.1%201.5%201.1%203.3%200%204.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9%202.4-.4%203.5.6%201.1%201.3%201.3%202.8.4%203.5zm-6.7-7.4c-.4.9-1.7%201.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6%201.5-.9%202.8-.4%201.3.7%201.9%201.8%201.5%202.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat right;
 }
 
-/* line 97, src/scss/content/_ce-projects.scss */
+/* line 101, src/scss/content/_ce-projects.scss */
 
 .projects--link:hover {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fab%22%20data-icon%3D%22github-square%22%20class%3D%22svg-inline--fa%20fa-github-square%20fa-w-14%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%2838%2C38%2C38%29%22%20d%3D%22M400%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h352c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zM277.3%20415.7c-8.4%201.5-11.5-3.7-11.5-8%200-5.4.2-33%20.2-55.3%200-15.6-5.2-25.5-11.3-30.7%2037-4.1%2076-9.2%2076-73.1%200-18.2-6.5-27.3-17.1-39%201.7-4.3%207.4-22-1.7-45-13.9-4.3-45.7%2017.9-45.7%2017.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1%200-28.4%201.9-41.6%205.6%200%200-31.8-22.2-45.7-17.9-9.1%2022.9-3.5%2040.6-1.7%2045-10.6%2011.7-15.6%2020.8-15.6%2039%200%2063.6%2037.3%2069%2074.3%2073.1-4.8%204.3-9.1%2011.7-10.6%2022.3-9.5%204.3-33.8%2011.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1%2010.2-1.1%2010.2%2010.8%205%2018.4%2024.2%2018.4%2024.2%209.7%2029.7%2056.1%2019.7%2056.1%2019.7%200%2013.9.2%2036.5.2%2040.6%200%204.3-3%209.5-11.5%208-66-22.1-112.2-84.9-112.2-158.3%200-91.8%2070.2-161.5%20162-161.5S388%20165.6%20388%20257.4c.1%2073.4-44.7%20136.3-110.7%20158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5%201.1-2.8%203-3.2%201.9-.2%203.7.6%203.9%201.9.3%201.3-1%202.6-3%203zm-9.5-.9c0%201.3-1.5%202.4-3.5%202.4-2.2.2-3.7-.9-3.7-2.4%200-1.3%201.5-2.4%203.5-2.4%201.9-.2%203.7.9%203.7%202.4zm-13.7-1.1c-.4%201.3-2.4%201.9-4.1%201.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3%202.4-1.9%204.1-1.5%202%20.6%203.3%202.1%202.8%203.4zm-12.3-5.4c-.9%201.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1%202.8-.9%204.3.6%201.3%201.3%201.8%203.3.9%204.1zm-9.1-9.1c-.9.6-2.6%200-3.7-1.5s-1.1-3.2%200-3.9c1.1-.9%202.8-.2%203.7%201.3%201.1%201.5%201.1%203.3%200%204.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9%202.4-.4%203.5.6%201.1%201.3%201.3%202.8.4%203.5zm-6.7-7.4c-.4.9-1.7%201.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6%201.5-.9%202.8-.4%201.3.7%201.9%201.8%201.5%202.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat right;
 }
 
-/* line 101, src/scss/content/_ce-projects.scss */
+/* line 105, src/scss/content/_ce-projects.scss */
 
 .projects--link--external {
   color: #626262;
@@ -1953,7 +1965,7 @@ a:hover .link-arrow {
   text-decoration: underline;
 }
 
-/* line 106, src/scss/content/_ce-projects.scss */
+/* line 110, src/scss/content/_ce-projects.scss */
 
 .projects--link--external:hover {
   color: #262626;
@@ -2047,24 +2059,18 @@ a:hover .link-arrow {
 
 /* line 85, src/scss/content/_ce-testimonials.scss */
 
-.testimonials--content a {
-  text-decoration: underline;
-}
-
-/* line 89, src/scss/content/_ce-testimonials.scss */
-
 .testimonials--content small {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 96, src/scss/content/_ce-testimonials.scss */
+/* line 92, src/scss/content/_ce-testimonials.scss */
 
 .testimonials--splide {
   position: relative;
 }
 
-/* line 99, src/scss/content/_ce-testimonials.scss */
+/* line 95, src/scss/content/_ce-testimonials.scss */
 
 .testimonials--splide:before {
   position: absolute;
@@ -2076,37 +2082,43 @@ a:hover .link-arrow {
   border: 2px solid #7BAD00FF;
 }
 
+/* line 106, src/scss/content/_ce-testimonials.scss */
+
+.testimonials--link {
+  text-decoration: underline;
+}
+
 /* line 1, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser {
   padding-top: 80px;
 }
 
-/* line 7, src/scss/content/_ce-text-image-teaser.scss */
+/* line 6, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--container-inner {
   display: grid;
   grid-gap: 50px;
 }
 
-/* line 17, src/scss/content/_ce-text-image-teaser.scss */
+/* line 16, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--headline {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* line 24, src/scss/content/_ce-text-image-teaser.scss */
+/* line 23, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--link {
   margin: 0;
+  padding-left: 80px;
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fas%22%20data-icon%3D%22download%22%20class%3D%22svg-inline--fa%20fa-download%20fa-w-16%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28255%2C255%2C255%29%22%20d%3D%22M216%200h80c13.3%200%2024%2010.7%2024%2024v168h87.7c17.8%200%2026.7%2021.5%2014.1%2034.1L269.7%20378.3c-7.5%207.5-19.8%207.5-27.3%200L90.1%20226.1c-12.6-12.6-3.7-34.1%2014.1-34.1H192V24c0-13.3%2010.7-24%2024-24zm296%20376v112c0%2013.3-10.7%2024-24%2024H24c-13.3%200-24-10.7-24-24V376c0-13.3%2010.7-24%2024-24h146.7l49%2049c20.1%2020.1%2052.5%2020.1%2072.6%200l49-49H488c13.3%200%2024%2010.7%2024%2024zm-124%2088c0-11-9-20-20-20s-20%209-20%2020%209%2020%2020%2020%2020-9%2020-20zm64%200c0-11-9-20-20-20s-20%209-20%2020%209%2020%2020%2020%2020-9%2020-20z%22%2F%3E%3C%2Fsvg%3E) no-repeat 35px;
   background-size: 25px;
   background-color: #7BAD00FF;
-  padding-left: 80px;
 }
 
-/* line 31, src/scss/content/_ce-text-image-teaser.scss */
+/* line 30, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--link:hover {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fas%22%20data-icon%3D%22download%22%20class%3D%22svg-inline--fa%20fa-download%20fa-w-16%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28255%2C255%2C255%29%22%20d%3D%22M216%200h80c13.3%200%2024%2010.7%2024%2024v168h87.7c17.8%200%2026.7%2021.5%2014.1%2034.1L269.7%20378.3c-7.5%207.5-19.8%207.5-27.3%200L90.1%20226.1c-12.6-12.6-3.7-34.1%2014.1-34.1H192V24c0-13.3%2010.7-24%2024-24zm296%20376v112c0%2013.3-10.7%2024-24%2024H24c-13.3%200-24-10.7-24-24V376c0-13.3%2010.7-24%2024-24h146.7l49%2049c20.1%2020.1%2052.5%2020.1%2072.6%200l49-49H488c13.3%200%2024%2010.7%2024%2024zm-124%2088c0-11-9-20-20-20s-20%209-20%2020%209%2020%2020%2020%2020-9%2020-20zm64%200c0-11-9-20-20-20s-20%209-20%2020%209%2020%2020%2020%2020-9%2020-20z%22%2F%3E%3C%2Fsvg%3E) no-repeat 35px;
@@ -2114,27 +2126,27 @@ a:hover .link-arrow {
   background-color: #729c01;
 }
 
-/* line 46, src/scss/content/_ce-text-image-teaser.scss */
+/* line 45, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--img-box {
   position: relative;
   display: block;
 }
 
-/* line 50, src/scss/content/_ce-text-image-teaser.scss */
+/* line 49, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--img-box:after {
-  content: "";
   position: absolute;
   top: -20px;
   bottom: -20px;
   right: -20px;
   left: 25%;
+  content: "";
   z-index: -1;
   border: 2px solid #7BAD00FF;
 }
 
-/* line 62, src/scss/content/_ce-text-image-teaser.scss */
+/* line 61, src/scss/content/_ce-text-image-teaser.scss */
 
 .text-image-teaser--img-box--image {
   display: block;
@@ -2147,20 +2159,20 @@ a:hover .link-arrow {
   background-color: #efefef;
 }
 
-/* line 14, src/scss/content/_ce-thinks_i_love.scss */
+/* line 6, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--headline {
   position: relative;
 }
 
-/* line 18, src/scss/content/_ce-thinks_i_love.scss */
+/* line 10, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--headline:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* line 24, src/scss/content/_ce-thinks_i_love.scss */
+/* line 16, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--boxes {
   display: grid;
@@ -2168,7 +2180,7 @@ a:hover .link-arrow {
   grid-gap: 24px;
 }
 
-/* line 34, src/scss/content/_ce-thinks_i_love.scss */
+/* line 26, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--box {
   display: grid;
@@ -2176,7 +2188,7 @@ a:hover .link-arrow {
   text-align: justify;
 }
 
-/* line 41, src/scss/content/_ce-thinks_i_love.scss */
+/* line 32, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--svg-box {
   width: 100px;
@@ -2184,25 +2196,25 @@ a:hover .link-arrow {
   border-radius: 50px;
 }
 
-/* line 46, src/scss/content/_ce-thinks_i_love.scss */
+/* line 37, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--svg-box--frontend {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fas%22%20data-icon%3D%22code%22%20class%3D%22svg-inline--fa%20fa-code%20fa-w-20%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28123%2C173%2C0%29%22%20d%3D%22M278.9%20511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2%208.7c1.8-6.4%208.5-10%2014.9-8.2l61%2017.7c6.4%201.8%2010%208.5%208.2%2014.9L293.8%20503.3c-1.9%206.4-8.5%2010.1-14.9%208.2zm-114-112.2l43.5-46.4c4.6-4.9%204.3-12.7-.8-17.2L117%20256l90.6-79.7c5.1-4.5%205.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8%20247.2c-5.1%204.7-5.1%2012.8%200%2017.5l144.1%20135.1c4.9%204.6%2012.5%204.4%2017-.5zm327.2.6l144.1-135.1c5.1-4.7%205.1-12.8%200-17.5L492.1%20112.1c-4.8-4.5-12.4-4.3-17%20.5L431.6%20159c-4.6%204.9-4.3%2012.7.8%2017.2L523%20256l-90.6%2079.7c-5.1%204.5-5.5%2012.3-.8%2017.2l43.5%2046.4c4.5%204.9%2012.1%205.1%2017%20.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat center;
 }
 
-/* line 50, src/scss/content/_ce-thinks_i_love.scss */
+/* line 41, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--svg-box--javascript {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fab%22%20data-icon%3D%22js-square%22%20class%3D%22svg-inline--fa%20fa-js-square%20fa-w-14%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28123%2C173%2C0%29%22%20d%3D%22M400%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h352c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zM243.8%20381.4c0%2043.6-25.6%2063.5-62.9%2063.5-33.7%200-53.2-17.4-63.2-38.5l34.3-20.7c6.6%2011.7%2012.6%2021.6%2027.1%2021.6%2013.8%200%2022.6-5.4%2022.6-26.5V237.7h42.1v143.7zm99.6%2063.5c-39.1%200-64.4-18.6-76.7-43l34.3-19.8c9%2014.7%2020.8%2025.6%2041.5%2025.6%2017.4%200%2028.6-8.7%2028.6-20.8%200-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5%200-31.6%2024.1-55.6%2061.6-55.6%2026.8%200%2046%209.3%2059.8%2033.7L368%20290c-7.2-12.9-15-18-27.1-18-12.3%200-20.1%207.8-20.1%2018%200%2012.6%207.8%2017.7%2025.9%2025.6l10.5%204.5c35.8%2015.3%2055.9%2031%2055.9%2066.2%200%2037.8-29.8%2058.6-69.7%2058.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat center;
 }
 
-/* line 54, src/scss/content/_ce-thinks_i_love.scss */
+/* line 45, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--svg-box--creative-coding {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fas%22%20data-icon%3D%22paint-brush%22%20class%3D%22svg-inline--fa%20fa-paint-brush%20fa-w-16%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%28123%2C173%2C0%29%22%20d%3D%22M167.02%20309.34c-40.12%202.58-76.53%2017.86-97.19%2072.3-2.35%206.21-8%209.98-14.59%209.98-11.11%200-45.46-27.67-55.25-34.35C0%20439.62%2037.93%20512%20128%20512c75.86%200%20128-43.77%20128-120.19%200-3.11-.65-6.08-.97-9.13l-88.01-73.34zM457.89%200c-15.16%200-29.37%206.71-40.21%2016.45C213.27%20199.05%20192%20203.34%20192%20257.09c0%2013.7%203.25%2026.76%208.73%2038.7l63.82%2053.18c7.21%201.8%2014.64%203.03%2022.39%203.03%2062.11%200%2098.11-45.47%20211.16-256.46%207.38-14.35%2013.9-29.85%2013.9-45.99C512%2020.64%20486%200%20457.89%200z%22%2F%3E%3C%2Fsvg%3E) no-repeat center;
 }
 
-/* line 59, src/scss/content/_ce-thinks_i_love.scss */
+/* line 50, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--svg-box--frontend,
 .thinks--svg-box--javascript,
@@ -2211,13 +2223,13 @@ a:hover .link-arrow {
   border: 2px solid #7BAD00FF;
 }
 
-/* line 68, src/scss/content/_ce-thinks_i_love.scss */
+/* line 58, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--box-title {
   margin: 10px 0 20px 0;
 }
 
-/* line 72, src/scss/content/_ce-thinks_i_love.scss */
+/* line 62, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks--box--description {
   margin-bottom: 0;
@@ -2593,7 +2605,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 376px) {
-  /* line 20, src/scss/content/_ce-hero.scss */
+  /* line 19, src/scss/content/_ce-hero.scss */
 
   .hero--description {
     display: block;
@@ -2658,7 +2670,14 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 29, src/scss/content/_ce-hero.scss */
+  /* line 47, src/scss/content/_ce-contact.scss */
+
+  .contact--map-wrap {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
+  /* line 28, src/scss/content/_ce-hero.scss */
 
   .hero--container-inner {
     margin: 0 -32px;
@@ -2670,7 +2689,7 @@ a:hover .link-arrow {
     margin: 0 -32px;
   }
 
-  /* line 17, src/scss/content/_ce-last-projects.scss */
+  /* line 16, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     display: grid;
@@ -2691,7 +2710,7 @@ a:hover .link-arrow {
     padding: 40px 32px 80px 32px;
   }
 
-  /* line 24, src/scss/content/_ce-thinks_i_love.scss */
+  /* line 16, src/scss/content/_ce-thinks_i_love.scss */
 
   .thinks--boxes {
     grid-template-columns: repeat(3, 1fr);
@@ -2699,7 +2718,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 601px) and (min-width: 1025px) {
-  /* line 17, src/scss/content/_ce-last-projects.scss */
+  /* line 16, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     grid-gap: 40px;
@@ -2746,8 +2765,8 @@ a:hover .link-arrow {
   /* line 1, src/scss/content/_ce-contact.scss */
 
   .contact--container-inner {
-    padding: 40px 0;
     grid-template-columns: repeat(2, 1fr);
+    padding: 40px 0;
   }
 
   /* line 47, src/scss/content/_ce-contact.scss */
@@ -2758,7 +2777,7 @@ a:hover .link-arrow {
     margin-right: unset;
   }
 
-  /* line 56, src/scss/content/_ce-contact.scss */
+  /* line 61, src/scss/content/_ce-contact.scss */
 
   .contact--map-wrap:after {
     content: "";
@@ -2777,13 +2796,13 @@ a:hover .link-arrow {
     grid-gap: 30px;
   }
 
-  /* line 126, src/scss/content/_ce-last-projects.scss */
+  /* line 123, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--column-right {
     grid-gap: 10px;
   }
 
-  /* line 7, src/scss/content/_ce-text-image-teaser.scss */
+  /* line 6, src/scss/content/_ce-text-image-teaser.scss */
 
   .text-image-teaser--container-inner {
     grid-template-columns: repeat(2, 1fr);
@@ -2824,7 +2843,7 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 29, src/scss/content/_ce-hero.scss */
+  /* line 28, src/scss/content/_ce-hero.scss */
 
   .hero--container-inner {
     margin: 0 -40px;
@@ -2855,7 +2874,7 @@ a:hover .link-arrow {
     padding: 40px 40px 80px 40px;
   }
 
-  /* line 24, src/scss/content/_ce-thinks_i_love.scss */
+  /* line 16, src/scss/content/_ce-thinks_i_love.scss */
 
   .thinks--boxes {
     grid-gap: 40px;
@@ -2887,14 +2906,14 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 30, src/scss/content/_ce-last-projects.scss */
+  /* line 29, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--column-left {
     display: inherit;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 2fr;
   }
 
-  /* line 135, src/scss/content/_ce-last-projects.scss */
+  /* line 132, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--right-item {
     grid-template-columns: 1fr 2fr;
@@ -3058,7 +3077,7 @@ a:hover .link-arrow {
     font-size: 36px;
   }
 
-  /* line 39, src/scss/content/_ce-text-image-teaser.scss */
+  /* line 38, src/scss/content/_ce-text-image-teaser.scss */
 
   .text-image-teaser--column-left {
     order: 2;
@@ -3084,7 +3103,7 @@ a:hover .link-arrow {
     display: inherit;
   }
 
-  /* line 49, src/scss/content/_ce-last-projects.scss */
+  /* line 48, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--left-image-box {
     display: none;
@@ -3123,7 +3142,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 601px) and (min-width: 900px) and (max-width: 1024px) {
-  /* line 17, src/scss/content/_ce-last-projects.scss */
+  /* line 16, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     grid-gap: 32px;
@@ -3137,7 +3156,7 @@ a:hover .link-arrow {
     grid-gap: 32px;
   }
 
-  /* line 24, src/scss/content/_ce-thinks_i_love.scss */
+  /* line 16, src/scss/content/_ce-thinks_i_love.scss */
 
   .thinks--boxes {
     grid-gap: 32px;

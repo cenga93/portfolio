@@ -15,26 +15,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggle && mobileToggle(toggle);
     mobileNavigation && stickyMobileNavigation(mobileNavigation);
-});
+}, {passive: true});
 
-/** Show-hide mobile navigation */
+/**
+ * Show-hide mobile navigation
+ * */
 function mobileToggle(toggle) {
-    toggle.addEventListener('click', function () {
-        toggle.classList.toggle('header-mobile--toggle-box--active');
-        document.querySelector('.mobile-nav').classList.toggle("show")
-    });
+    const mobileNav = document.querySelector('.mobile-nav'); // Mobile navigation wrapper
+
+    // Create three empty span elements
+    for (let i = 0; i < 3; i++) {
+        const span = document.createElement("span");
+        toggle.appendChild(span)
+    }
+
+    // Add / Remove show class
+    if (mobileNav) {
+        toggle.addEventListener('click', function () {
+            this.classList.toggle('header-mobile--toggle-box--active');
+            mobileNav.classList.toggle("show");
+        });
+    }
 }
 
-/** Set sticky class on scroll */
+/**
+ * Set sticky class on scroll
+ * */
 function stickyMobileNavigation(mobileNavigation) {
-    let scrollpos;
-    const mobileHeaderHeight = mobileNavigation.offsetHeight;
+    let scrollPosition;
+    const mobileHeaderHeight = mobileNavigation.offsetHeight + 150;
 
-    const add_sticky_class = () => mobileNavigation.classList.add("header-mobile-top--sticky");
-    const remove_sticky_class = () => mobileNavigation.classList.remove("header-mobile-top--sticky");
+    const addStickyClass = () => mobileNavigation.classList.add("header-mobile-top--sticky");
+    const removeStickyClass = () => mobileNavigation.classList.remove("header-mobile-top--sticky");
 
     window.addEventListener('scroll', function () {
-        scrollpos = window.scrollY;
-        scrollpos >= mobileHeaderHeight ? add_sticky_class() : remove_sticky_class();
+        scrollPosition = window.scrollY;
+        scrollPosition >= mobileHeaderHeight ? addStickyClass() : removeStickyClass();
     })
 }

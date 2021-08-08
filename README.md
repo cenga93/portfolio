@@ -22,6 +22,7 @@ _If you don't have and **node** and **npm**, execute the following command:_
 * Splide slider
 * Pristine form validator
 * Fslightbox
+* Lazyload.js
 
 ##Dependesies
 * dotenv

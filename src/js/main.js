@@ -18,4 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
      * */
     const contactValidation = new ContactValidation();
     contactForm && contactValidation.validation();
-});
+
+    /**
+     * Initialization LazyLoader.js
+     * */
+    const lazyLoader = new LazyLoad();
+}, {passive: true});

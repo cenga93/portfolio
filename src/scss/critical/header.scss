@@ -44,11 +44,11 @@
   &:after {
     content: "";
     position: absolute;
-    width: 0;
-    height: 3px;
     bottom: -4px;
     left: 0;
     right: 0;
+    height: 3px;
+    width: 0;
     transition: 0.3s;
     background: $color-green;
   }
@@ -59,9 +59,9 @@
       position: absolute;
       left: 0;
       right: 0;
-      width: 100%;
       bottom: -4px;
       height: 3px;
+      width: 100%;
       background: $color-green;
       transition: 0.3s;
     }

@@ -2,22 +2,25 @@ const express = require('express');
 const router = express.Router();
 
 // Import routes
-const {index, contact, sendMessage} = require('../controllers/default');
-const projectController = require("../controllers/projects")
-/**
- * @name Index
- * @method GET
- */
-// router.get('/', index);
+const {contact, sendMessage, home} = require('../controllers/default');
+const projectController = require("../controllers/projects");
+const testimonialController = require("../controllers/testimonials");
+const socialLinkController = require("../controllers/socialLinks");
 
 /**
- * @name Contact
+ * @name Project
+ * @method GET
+ */
+router.get('/', home);
+
+/**
+ * @name contact
  * @method GET
  */
 router.get('/contact', contact);
 
 /**
- * @name Contact
+ * @name sendMessage
  * @method POST
  */
 router.post('/contact', sendMessage);
@@ -29,10 +32,16 @@ router.post('/contact', sendMessage);
 router.post('/', projectController.create);
 
 /**
- * @name Project
- * @method GET
+ * @method POST
+ * @link /testimonials it's for now
  */
-router.get('/', projectController.getAll);
+router.post('/testimonials', testimonialController.create);
+
+/**
+ * @method POST
+ * @link /sociallink it's for now
+ */
+router.post('/sociallink', socialLinkController.create);
 
 // Export router
 module.exports = router;

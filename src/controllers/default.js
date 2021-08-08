@@ -1,23 +1,34 @@
 const sendEmail = require("./mail/mail");
+const projectController = require("./projects/index");
+const testimonialController = require("./testimonials/index");
+const socialLinksController = require("./socialLinks/index");
 
 /**
- * @name Home
+ * @name home
  * @method GET
  */
-// module.exports.index = async (req, res) => {
-//     try {
-//         res.status(200).render('partials/page/_index', {
-//
-//         });
-//     } catch (err) {
-//         res.status(500).json({
-//             error: err,
-//         });
-//     }
-// };
+module.exports.home = async (req, res) => {
+    try {
+        const projects = await projectController.getAll(req, res);
+        const testimonials = await testimonialController.getAll(req, res);
+        const socialLinks = await socialLinksController.getAll(req, res);
+
+        res.status(200).render("partials/page/_index", {
+            title: "Home page",
+            footerType: "green",
+            projects: projects ? projects : {},
+            testimonials: testimonials ? testimonials : {},
+            socialLinks: socialLinks ? socialLinks : []
+        })
+    } catch (err) {
+        res.status(500).json({
+            error: err,
+        });
+    }
+};
 
 /**
- * @name Contact
+ * @name contact
  * @method GET
  */
 module.exports.contact = async (req, res) => {
@@ -35,7 +46,7 @@ module.exports.contact = async (req, res) => {
 };
 
 /**
- * @name Contact
+ * @name sendMessage
  * @method POST
  */
 module.exports.sendMessage = async (req, res) => {

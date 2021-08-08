@@ -3,7 +3,7 @@
         <div class="projects--container-inner width-l">
             <h2 class="center projects--headline">Rest of my projects</h2>
             <div class="projects--boxes">
-                <% if (projects.length > 0){ %>
+                <% if (typeof projects == 'object' && projects.length > 0){ %>
                     <% for (let singleProject of projects){ %>
                         <!-- Single project -->
                         <div class="projects--single-project">
@@ -11,8 +11,11 @@
                                 <a href="<%= singleProject.img_original %>"
                                    class="projects--image-link"
                                    data-fslightbox>
-                                    <img src="<%= singleProject.img %>"
-                                         class="projects--image"
+                                    <img data-src="<%= singleProject.img %>"
+                                         src="data:,"
+                                         width="376"
+                                         height="220"
+                                         class="projects--image lazy"
                                          alt=""
                                          title="">
                                 </a>
@@ -48,6 +51,7 @@
                                     <a href="<%= singleProject.externalLink %>"
                                        target="_blank"
                                        class="projects--link--external">Website</a>
+                                    <small>Participation in this project</small>
                                 <% } %>
                             </div>
                         </div>

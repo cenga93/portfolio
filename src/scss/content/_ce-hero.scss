@@ -11,16 +11,15 @@
   &--headline {
     margin-bottom: 20px;
     padding: 0 20px;
-
-    @include until($tablet){
+    @include until($tablet) {
       font-size: 36px;
     }
   }
 
-  &--description{
+  &--description {
     display: none;
 
-    @include from(375px){
+    @include from(375px) {
       display: block;
     }
   }
@@ -40,11 +39,11 @@
   }
 
   .hero--content {
-    width: 100%; // Is must
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
+    width: 100%; // Is must
   }
 
   .hero--content-links {

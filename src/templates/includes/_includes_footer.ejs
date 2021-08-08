@@ -65,22 +65,16 @@
                         <!-- Social media -->
                         <ul class="footer--info--list">
                             <li class="footer--info--item">Social media</li>
-                            <li class="footer--info--item">
-                                <a class="footer--info--link social-link social-link--facebook"
-                                   href="#">Facebook</a>
-                            </li>
-                            <li class="footer--info--item">
-                                <a class="footer--info--link social-link social-link--instagram"
-                                   href="#">Instagram</a>
-                            </li>
-                            <li class="footer--info--item">
-                                <a class="footer--info--link social-link social-link--linkedin"
-                                   href="#">Linkedin</a>
-                            </li>
-                            <li class="footer--info--item">
-                                <a class="footer--info--link social-link social-link--github"
-                                   href="#">Github</a>
-                            </li>
+                            <% if (typeof socialLinks == 'object' && socialLinks.length > 0){ %>
+                                <% for (let singleLink of socialLinks){ %>
+                                    <li class="footer--info--item">
+                                        <a class="footer--info--link social-link social-link--<%= singleLink.icon && singleLink.icon %>"
+                                           href="<%= singleLink.link ? singleLink.link : '#' %>"
+                                           target="_blank">
+                                            <%= singleLink.name %>
+                                        </a>
+                                    </li>
+                            <% }} %>
                         </ul>
                     </div>
                     <!-- END: footer-info -->

@@ -1,14 +1,12 @@
-const Project = require("../../models/projects");
-
+const SocialLink = require("../../models/socialLinks");
 /**
- * @name Project
+ * @name SocialLink
  * @method GET
  */
 module.exports = async (req, res) => {
     try {
-        return await Project.find().exec();
+        return await SocialLink.find().exec();
     } catch ({message}) {
         res.status(500).json({message});
     }
 };
-

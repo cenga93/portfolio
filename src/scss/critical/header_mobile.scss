@@ -19,13 +19,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:  10px 24px;
-
+  padding: 10px 24px;
+  transition: .3s;
   @include from($mobile) {
-    padding:  10px 32px;
+    padding: 10px 32px;
   }
 
-  &--sticky{
+  &--sticky {
+    transition: .3s;
     background-color: $color-black;
   }
 }
@@ -39,17 +40,30 @@ header {
   top: 0;
   left: -100%;
   transition: 0.3s ease-in-out;
-  padding: 32px;
-  background-color: red;
+  padding: 10px 24px;
+  background-color: $color-black;
   height: 100vh;
   z-index: 2;
+  outline: 1px solid rgba(255, 255, 255, 0.06);
 
   &.show {
     left: 0%;
     transition: 0.3s ease-in-out;
-    width: 220px;
-
+    width: 240px;
   }
+}
+
+.header-mobile--item{
+  margin: 10px 0;
+
+  &:first-child{
+    display: grid;
+    margin-top: 0;
+  }
+}
+
+.header-mobile--logo-wrap{
+  display: grid;
 }
 
 .header-mobile--toggle-box {

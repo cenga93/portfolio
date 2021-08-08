@@ -1,4 +1,4 @@
-.projects{
+.projects {
   padding-top: 50px;
 }
 
@@ -20,7 +20,6 @@
 
 .projects--boxes {
   display: grid;
-  //grid-gap: 40px;
   @include grid-gap;
 
   @include from($mobile) {
@@ -32,13 +31,13 @@
   }
 }
 
-.projects--image-link{
+.projects--image-link {
+  position: relative;
   display: flex;
   overflow: hidden;
-  position: relative;
   box-shadow: 0px 0px 6px 1px #00000026;
 
-  &:after{
+  &:after {
     position: absolute;
     content: "";
     top: 0;
@@ -50,19 +49,19 @@
     transition: .4s;
   }
 
-  &:hover{
-    .projects--image{
+  &:hover {
+    .projects--image {
       transition: .4s;
       transform: scale(1.05);
     }
 
-    &:after{
+    &:after {
       transition: .4s;
       opacity: .2;
     }
   }
 
-  .projects--image{
+  .projects--image {
     transition: .4s;
   }
 }
@@ -74,20 +73,25 @@
 }
 
 .projects--content-badge {
+  margin-right: 5px;
+  padding: 2px 4px;
   background: $color-green-dark;
   color: #fff;
   border-radius: 3px;
-  padding: 2px 4px;
   font-size: 10px;
-  margin-right: 5px;
+
+  &--info{
+    background: orange;
+  }
 }
 
 .projects--content-title {
-  text-decoration: underline;
-  font-weight: 300;
-  color: $color-black;
   font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: $color-black;
 }
+
 .projects--link {
   height: 25px;
   width: 25px;

@@ -27,7 +27,6 @@ const __public = path.join(__dirname, "dist");
 const __src = path.join(__dirname, "src");
 const __templates = path.join(__src, "templates");
 
-
 // App config
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());

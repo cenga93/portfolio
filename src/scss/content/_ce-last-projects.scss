@@ -1,11 +1,10 @@
 .last-projects {
   padding-top: 80px;
-  //padding: 30px 0;
 }
 
 .last-projects--headline {
-  margin-bottom: 50px;
   position: relative;
+  margin-bottom: 50px;
   @extend .underline;
 
   &:after {
@@ -30,7 +29,7 @@
 .last-projects--column-left {
   @include from($desktop-large) {
     display: inherit;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 2fr;
   }
 }
 
@@ -41,7 +40,7 @@
     @extend .underline;
   }
 
-  &--description{
+  &--description {
     font-size: 14px;
   }
 }
@@ -55,8 +54,8 @@
 .last-projects--left--link {
   position: relative;
   display: flex;
-  overflow: hidden;
   height: 100%; // is must
+  overflow: hidden;
 
   .cta-main-arrow-invert {
     position: absolute;
@@ -96,17 +95,15 @@
   }
 }
 
-.last-projects--small-text{
+.last-projects--small-text {
   display: block;
   margin-bottom: 10px;
-  //padding-left: 30px;
-  //background: sassvg("calendar-solid", $color-green) no-repeat left;
 }
 
 .last-projects--left-content-box {
   margin: 1px;
+  padding: 15px 20px;
   outline: 1px solid $color-grey-light;
-  padding: 20px 30px;
 
   .cta-outline-black {
     margin: 0;
@@ -114,12 +111,12 @@
 }
 
 .last-projects--right-link {
+  display: block;
+  margin-top: 10px;
   font-weight: $font-weight-light;
   color: $color-grey-dark;
   font-size: 14px;
-  display: block;
   text-decoration: underline $color-green-dark;
-  margin-top: 10px;
 }
 
 //  Right column
@@ -145,17 +142,22 @@
   overflow: hidden;
   border: 1px solid $color-grey-light;
 
-  &:hover{
-    img{
+  &:hover {
+    img {
       transition: .5s;
       transform: scale(1.1);
     }
   }
-  img{
+
+  img {
     transition: .5s;
+  }
+
+  a {
+    display: flex;
   }
 }
 
-.last-projects--right-content-box{
-  padding: 10px 0;
+.last-projects--right-content-box {
+  padding-top: 15px;
 }

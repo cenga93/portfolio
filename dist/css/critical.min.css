@@ -497,13 +497,13 @@ section {
   padding-bottom: 80px;
 }
 
-/* line 54, src/scss/base/_base_critical.scss */
+/* line 53, src/scss/base/_base_critical.scss */
 
 .invert {
   color: #fff;
 }
 
-/* line 58, src/scss/base/_base_critical.scss */
+/* line 57, src/scss/base/_base_critical.scss */
 
 h1,
 .h1 {
@@ -515,7 +515,7 @@ h1,
   color: #0a0a0a;
 }
 
-/* line 71, src/scss/base/_base_critical.scss */
+/* line 70, src/scss/base/_base_critical.scss */
 
 .invert h1,
 .invert
@@ -523,7 +523,7 @@ h1,
   color: #fff;
 }
 
-/* line 76, src/scss/base/_base_critical.scss */
+/* line 75, src/scss/base/_base_critical.scss */
 
 h2,
 .h2 {
@@ -535,7 +535,7 @@ h2,
   color: #0a0a0a;
 }
 
-/* line 87, src/scss/base/_base_critical.scss */
+/* line 86, src/scss/base/_base_critical.scss */
 
 .invert h2,
 .invert
@@ -543,7 +543,7 @@ h2,
   color: #fff;
 }
 
-/* line 92, src/scss/base/_base_critical.scss */
+/* line 91, src/scss/base/_base_critical.scss */
 
 h3,
 .h3 {
@@ -555,7 +555,7 @@ h3,
   color: #0a0a0a;
 }
 
-/* line 103, src/scss/base/_base_critical.scss */
+/* line 102, src/scss/base/_base_critical.scss */
 
 .invert h3,
 .invert
@@ -563,7 +563,7 @@ h3,
   color: #fff;
 }
 
-/* line 108, src/scss/base/_base_critical.scss */
+/* line 107, src/scss/base/_base_critical.scss */
 
 h4,
 .h4 {
@@ -573,7 +573,7 @@ h4,
   line-height: 1.2;
 }
 
-/* line 118, src/scss/base/_base_critical.scss */
+/* line 117, src/scss/base/_base_critical.scss */
 
 .invert h4,
 .invert
@@ -581,7 +581,7 @@ h4,
   color: #fff;
 }
 
-/* line 123, src/scss/base/_base_critical.scss */
+/* line 122, src/scss/base/_base_critical.scss */
 
 h5,
 .h5 {
@@ -592,7 +592,7 @@ h5,
   line-height: 1.2;
 }
 
-/* line 134, src/scss/base/_base_critical.scss */
+/* line 133, src/scss/base/_base_critical.scss */
 
 .invert h5,
 .invert
@@ -600,7 +600,7 @@ h5,
   color: #fff;
 }
 
-/* line 139, src/scss/base/_base_critical.scss */
+/* line 138, src/scss/base/_base_critical.scss */
 
 p {
   margin-bottom: 15px;
@@ -608,7 +608,7 @@ p {
   color: #626262;
 }
 
-/* line 145, src/scss/base/_base_critical.scss */
+/* line 144, src/scss/base/_base_critical.scss */
 
 ul,
 ol {
@@ -1274,13 +1274,13 @@ section {
   padding-bottom: 80px;
 }
 
-/* line 54, src/scss/base/_base_critical.scss */
+/* line 53, src/scss/base/_base_critical.scss */
 
 .invert {
   color: #fff;
 }
 
-/* line 58, src/scss/base/_base_critical.scss */
+/* line 57, src/scss/base/_base_critical.scss */
 
 h1,
 .h1 {
@@ -1292,7 +1292,7 @@ h1,
   color: #0a0a0a;
 }
 
-/* line 71, src/scss/base/_base_critical.scss */
+/* line 70, src/scss/base/_base_critical.scss */
 
 .invert h1,
 .invert
@@ -1300,7 +1300,7 @@ h1,
   color: #fff;
 }
 
-/* line 76, src/scss/base/_base_critical.scss */
+/* line 75, src/scss/base/_base_critical.scss */
 
 h2,
 .h2 {
@@ -1312,7 +1312,7 @@ h2,
   color: #0a0a0a;
 }
 
-/* line 87, src/scss/base/_base_critical.scss */
+/* line 86, src/scss/base/_base_critical.scss */
 
 .invert h2,
 .invert
@@ -1320,7 +1320,7 @@ h2,
   color: #fff;
 }
 
-/* line 92, src/scss/base/_base_critical.scss */
+/* line 91, src/scss/base/_base_critical.scss */
 
 h3,
 .h3 {
@@ -1332,7 +1332,7 @@ h3,
   color: #0a0a0a;
 }
 
-/* line 103, src/scss/base/_base_critical.scss */
+/* line 102, src/scss/base/_base_critical.scss */
 
 .invert h3,
 .invert
@@ -1340,7 +1340,7 @@ h3,
   color: #fff;
 }
 
-/* line 108, src/scss/base/_base_critical.scss */
+/* line 107, src/scss/base/_base_critical.scss */
 
 h4,
 .h4 {
@@ -1350,7 +1350,7 @@ h4,
   line-height: 1.2;
 }
 
-/* line 118, src/scss/base/_base_critical.scss */
+/* line 117, src/scss/base/_base_critical.scss */
 
 .invert h4,
 .invert
@@ -1358,7 +1358,7 @@ h4,
   color: #fff;
 }
 
-/* line 123, src/scss/base/_base_critical.scss */
+/* line 122, src/scss/base/_base_critical.scss */
 
 h5,
 .h5 {
@@ -1369,7 +1369,7 @@ h5,
   line-height: 1.2;
 }
 
-/* line 134, src/scss/base/_base_critical.scss */
+/* line 133, src/scss/base/_base_critical.scss */
 
 .invert h5,
 .invert
@@ -1377,7 +1377,7 @@ h5,
   color: #fff;
 }
 
-/* line 139, src/scss/base/_base_critical.scss */
+/* line 138, src/scss/base/_base_critical.scss */
 
 p {
   margin-bottom: 15px;
@@ -1385,7 +1385,7 @@ p {
   color: #626262;
 }
 
-/* line 145, src/scss/base/_base_critical.scss */
+/* line 144, src/scss/base/_base_critical.scss */
 
 ul,
 ol {
@@ -1581,11 +1581,11 @@ blockquote,
 .header-desktop--mainnavigation--link:after {
   content: "";
   position: absolute;
-  width: 0;
-  height: 3px;
   bottom: -4px;
   left: 0;
   right: 0;
+  height: 3px;
+  width: 0;
   transition: 0.3s;
   background: #7BAD00FF;
 }
@@ -1597,9 +1597,9 @@ blockquote,
   position: absolute;
   left: 0;
   right: 0;
-  width: 100%;
   bottom: -4px;
   height: 3px;
+  width: 100%;
   background: #7BAD00FF;
   transition: 0.3s;
 }
@@ -1699,49 +1699,71 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 24px;
+  transition: .3s;
 }
 
 /* line 28, src/scss/critical/header_mobile.scss */
 
 .header-mobile-top--sticky {
+  transition: .3s;
   background-color: #262626;
 }
 
-/* line 33, src/scss/critical/header_mobile.scss */
+/* line 34, src/scss/critical/header_mobile.scss */
 
 .header-mobile--container-inner {
   overflow: hidden;
 }
 
-/* line 37, src/scss/critical/header_mobile.scss */
+/* line 38, src/scss/critical/header_mobile.scss */
 
 .mobile-nav {
   position: absolute;
   top: 0;
   left: -100%;
   transition: 0.3s ease-in-out;
-  padding: 32px;
-  background-color: red;
+  padding: 10px 24px;
+  background-color: #262626;
   height: 100vh;
   z-index: 2;
+  outline: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-/* line 47, src/scss/critical/header_mobile.scss */
+/* line 49, src/scss/critical/header_mobile.scss */
 
 .mobile-nav.show {
   left: 0%;
   transition: 0.3s ease-in-out;
-  width: 220px;
+  width: 240px;
 }
 
-/* line 55, src/scss/critical/header_mobile.scss */
+/* line 56, src/scss/critical/header_mobile.scss */
+
+.header-mobile--item {
+  margin: 10px 0;
+}
+
+/* line 59, src/scss/critical/header_mobile.scss */
+
+.header-mobile--item:first-child {
+  display: grid;
+  margin-top: 0;
+}
+
+/* line 65, src/scss/critical/header_mobile.scss */
+
+.header-mobile--logo-wrap {
+  display: grid;
+}
+
+/* line 69, src/scss/critical/header_mobile.scss */
 
 .header-mobile--toggle-box {
   display: inline-block;
   cursor: pointer;
 }
 
-/* line 59, src/scss/critical/header_mobile.scss */
+/* line 73, src/scss/critical/header_mobile.scss */
 
 .header-mobile--toggle-box span {
   background-color: ghostwhite;
@@ -1753,19 +1775,19 @@ header {
   transform-origin: 0 0;
 }
 
-/* line 71, src/scss/critical/header_mobile.scss */
+/* line 85, src/scss/critical/header_mobile.scss */
 
 .header-mobile--toggle-box--active span:nth-child(1) {
   transform: rotate(45deg) translate(1px, -6px);
 }
 
-/* line 75, src/scss/critical/header_mobile.scss */
+/* line 89, src/scss/critical/header_mobile.scss */
 
 .header-mobile--toggle-box--active span:nth-child(2) {
   transform: scaleX(0);
 }
 
-/* line 79, src/scss/critical/header_mobile.scss */
+/* line 93, src/scss/critical/header_mobile.scss */
 
 .header-mobile--toggle-box--active span:nth-child(3) {
   transform: rotate(-45deg) translate(1px, 4px);
