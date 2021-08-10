@@ -1,5 +1,9 @@
 .last-projects {
-  padding-top: 80px;
+  padding-top: 40px;
+
+  @include from($tablet) {
+    padding-top: 80px;
+  }
 }
 
 .last-projects--headline {

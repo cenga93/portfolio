@@ -41,7 +41,7 @@ class ContactValidation {
 
                     form.reset();
                 }
-            }, {passive: true});
+            });
         }
     }
 }

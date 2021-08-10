@@ -1331,13 +1331,20 @@ a:hover .link-arrow {
   color: #fff;
 }
 
-/* line 2, src/scss/content/_ce-contact-form.scss */
+/* line 1, src/scss/content/_ce-contact-form.scss */
+
+.contact-form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 8, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--container-inner {
   display: grid;
 }
 
-/* line 11, src/scss/content/_ce-contact-form.scss */
+/* line 17, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--headline {
   position: relative;
@@ -1345,28 +1352,28 @@ a:hover .link-arrow {
   font-weight: bold;
 }
 
-/* line 19, src/scss/content/_ce-contact-form.scss */
+/* line 25, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group {
   display: grid;
   position: relative;
 }
 
-/* line 32, src/scss/content/_ce-contact-form.scss */
+/* line 38, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group--danger .contact-form--input-field,
 .contact-form--input-group--danger .contact-form--textarea {
   outline: 1px solid #9b1c20;
 }
 
-/* line 39, src/scss/content/_ce-contact-form.scss */
+/* line 45, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group--success .contact-form--input-field,
 .contact-form--input-group--success .contact-form--textarea {
   outline: 1px solid #7BAD00FF;
 }
 
-/* line 47, src/scss/content/_ce-contact-form.scss */
+/* line 53, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-field {
   padding: 10px 15px;
@@ -1374,7 +1381,7 @@ a:hover .link-arrow {
   outline: 1px solid #cccccc;
 }
 
-/* line 53, src/scss/content/_ce-contact-form.scss */
+/* line 59, src/scss/content/_ce-contact-form.scss */
 
 .pristine-error {
   position: absolute;
@@ -1384,7 +1391,7 @@ a:hover .link-arrow {
   color: #9b1c20;
 }
 
-/* line 62, src/scss/content/_ce-contact-form.scss */
+/* line 68, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--textarea {
   position: relative;
@@ -1394,14 +1401,14 @@ a:hover .link-arrow {
   outline: 1px solid #cccccc;
 }
 
-/* line 70, src/scss/content/_ce-contact-form.scss */
+/* line 76, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--content-wrapp {
   display: grid;
   grid-gap: 30px;
 }
 
-/* line 75, src/scss/content/_ce-contact-form.scss */
+/* line 81, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--submit-btn {
   display: inline-block;
@@ -1443,17 +1450,23 @@ a:hover .link-arrow {
 
 /* line 1, src/scss/content/_ce-contact.scss */
 
+.contact {
+  padding-bottom: 40px;
+}
+
+/* line 5, src/scss/content/_ce-contact.scss */
+
 .contact--container-inner {
   display: grid;
 }
 
-/* line 10, src/scss/content/_ce-contact.scss */
+/* line 14, src/scss/content/_ce-contact.scss */
 
 .contact--item {
   margin-bottom: 20px;
 }
 
-/* line 13, src/scss/content/_ce-contact.scss */
+/* line 17, src/scss/content/_ce-contact.scss */
 
 .contact--item--phone {
   padding: 10px;
@@ -1462,7 +1475,7 @@ a:hover .link-arrow {
   background-size: 30px;
 }
 
-/* line 20, src/scss/content/_ce-contact.scss */
+/* line 24, src/scss/content/_ce-contact.scss */
 
 .contact--item--mail {
   padding-left: 60px;
@@ -1470,7 +1483,7 @@ a:hover .link-arrow {
   background-size: 30px;
 }
 
-/* line 25, src/scss/content/_ce-contact.scss */
+/* line 29, src/scss/content/_ce-contact.scss */
 
 .contact--item--mail .mail_me {
   font-weight: 400;
@@ -1479,7 +1492,7 @@ a:hover .link-arrow {
   text-decoration: underline;
 }
 
-/* line 33, src/scss/content/_ce-contact.scss */
+/* line 37, src/scss/content/_ce-contact.scss */
 
 .contact--item--location {
   padding: 10px;
@@ -1488,7 +1501,7 @@ a:hover .link-arrow {
   background-size: 25px;
 }
 
-/* line 41, src/scss/content/_ce-contact.scss */
+/* line 45, src/scss/content/_ce-contact.scss */
 
 .contact--iframe {
   width: 100%;
@@ -1496,7 +1509,7 @@ a:hover .link-arrow {
   border: 0;
 }
 
-/* line 47, src/scss/content/_ce-contact.scss */
+/* line 51, src/scss/content/_ce-contact.scss */
 
 .contact--map-wrap {
   margin-left: -24px;
@@ -1662,24 +1675,24 @@ a:hover .link-arrow {
 /* line 1, src/scss/content/_ce-last-projects.scss */
 
 .last-projects {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
-/* line 5, src/scss/content/_ce-last-projects.scss */
+/* line 9, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--headline {
   position: relative;
   margin-bottom: 50px;
 }
 
-/* line 10, src/scss/content/_ce-last-projects.scss */
+/* line 14, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--headline:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* line 16, src/scss/content/_ce-last-projects.scss */
+/* line 20, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--content {
   display: flex;
@@ -1687,20 +1700,20 @@ a:hover .link-arrow {
   gap: 30px;
 }
 
-/* line 37, src/scss/content/_ce-last-projects.scss */
+/* line 41, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--headline {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* line 43, src/scss/content/_ce-last-projects.scss */
+/* line 47, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--description {
   font-size: 14px;
 }
 
-/* line 54, src/scss/content/_ce-last-projects.scss */
+/* line 58, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link {
   position: relative;
@@ -1709,7 +1722,7 @@ a:hover .link-arrow {
   overflow: hidden;
 }
 
-/* line 60, src/scss/content/_ce-last-projects.scss */
+/* line 64, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link .cta-main-arrow-invert {
   position: absolute;
@@ -1720,7 +1733,7 @@ a:hover .link-arrow {
   padding: 30px;
 }
 
-/* line 69, src/scss/content/_ce-last-projects.scss */
+/* line 73, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link::after {
   position: absolute;
@@ -1734,34 +1747,34 @@ a:hover .link-arrow {
   opacity: 0;
 }
 
-/* line 82, src/scss/content/_ce-last-projects.scss */
+/* line 86, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link:hover:after {
   transition: opacity 0.5s;
   opacity: 1;
 }
 
-/* line 87, src/scss/content/_ce-last-projects.scss */
+/* line 91, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link:hover img {
   transition: 0.5s;
   transform: scale(1.05);
 }
 
-/* line 93, src/scss/content/_ce-last-projects.scss */
+/* line 97, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left--link img {
   transition: 0.5s;
 }
 
-/* line 98, src/scss/content/_ce-last-projects.scss */
+/* line 102, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--small-text {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 103, src/scss/content/_ce-last-projects.scss */
+/* line 107, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left-content-box {
   margin: 1px;
@@ -1769,13 +1782,13 @@ a:hover .link-arrow {
   outline: 1px solid #cccccc;
 }
 
-/* line 108, src/scss/content/_ce-last-projects.scss */
+/* line 112, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--left-content-box .cta-outline-black {
   margin: 0;
 }
 
-/* line 113, src/scss/content/_ce-last-projects.scss */
+/* line 117, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-link {
   display: block;
@@ -1786,86 +1799,81 @@ a:hover .link-arrow {
   text-decoration: underline #729c01;
 }
 
-/* line 123, src/scss/content/_ce-last-projects.scss */
+/* line 127, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--column-right {
   display: grid;
   grid-gap: 40px;
 }
 
-/* line 132, src/scss/content/_ce-last-projects.scss */
+/* line 136, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-item {
   display: grid;
   grid-gap: 20px;
 }
 
-/* line 141, src/scss/content/_ce-last-projects.scss */
+/* line 145, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box {
   overflow: hidden;
   border: 1px solid #cccccc;
 }
 
-/* line 146, src/scss/content/_ce-last-projects.scss */
+/* line 150, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box:hover img {
   transition: .5s;
   transform: scale(1.1);
 }
 
-/* line 152, src/scss/content/_ce-last-projects.scss */
+/* line 156, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box img {
   transition: .5s;
 }
 
-/* line 156, src/scss/content/_ce-last-projects.scss */
+/* line 160, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-image-box a {
   display: flex;
 }
 
-/* line 161, src/scss/content/_ce-last-projects.scss */
+/* line 165, src/scss/content/_ce-last-projects.scss */
 
 .last-projects--right-content-box {
   padding-top: 15px;
 }
 
-/* line 1, src/scss/content/_ce-projects.scss */
-
-.projects {
-  padding-top: 50px;
-}
-
-/* line 5, src/scss/content/_ce-projects.scss */
+/* line 7, src/scss/content/_ce-projects.scss */
 
 .projects--headline {
   position: relative;
   margin-bottom: 60px;
 }
 
-/* line 10, src/scss/content/_ce-projects.scss */
+/* line 12, src/scss/content/_ce-projects.scss */
 
 .projects--headline:after {
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* line 17, src/scss/content/_ce-projects.scss */
+/* line 19, src/scss/content/_ce-projects.scss */
 
 .projects--container-inner {
   padding: 20px 0;
 }
 
-/* line 21, src/scss/content/_ce-projects.scss */
+/* line 23, src/scss/content/_ce-projects.scss */
 
 .projects--boxes {
   display: grid;
   grid-gap: 24px;
+  grid-row-gap: 40px;
 }
 
-/* line 34, src/scss/content/_ce-projects.scss */
+/* line 37, src/scss/content/_ce-projects.scss */
 
 .projects--image-link {
   position: relative;
@@ -1874,7 +1882,7 @@ a:hover .link-arrow {
   box-shadow: 0px 0px 6px 1px #00000026;
 }
 
-/* line 40, src/scss/content/_ce-projects.scss */
+/* line 43, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:after {
   position: absolute;
@@ -1888,27 +1896,27 @@ a:hover .link-arrow {
   transition: .4s;
 }
 
-/* line 53, src/scss/content/_ce-projects.scss */
+/* line 56, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:hover .projects--image {
   transition: .4s;
   transform: scale(1.05);
 }
 
-/* line 58, src/scss/content/_ce-projects.scss */
+/* line 61, src/scss/content/_ce-projects.scss */
 
 .projects--image-link:hover:after {
   transition: .4s;
   opacity: .2;
 }
 
-/* line 64, src/scss/content/_ce-projects.scss */
+/* line 67, src/scss/content/_ce-projects.scss */
 
 .projects--image-link .projects--image {
   transition: .4s;
 }
 
-/* line 69, src/scss/content/_ce-projects.scss */
+/* line 72, src/scss/content/_ce-projects.scss */
 
 .projects--content {
   display: grid;
@@ -1916,7 +1924,7 @@ a:hover .link-arrow {
   margin-top: 20px;
 }
 
-/* line 75, src/scss/content/_ce-projects.scss */
+/* line 78, src/scss/content/_ce-projects.scss */
 
 .projects--content-badge {
   margin-right: 5px;
@@ -1927,13 +1935,13 @@ a:hover .link-arrow {
   font-size: 10px;
 }
 
-/* line 83, src/scss/content/_ce-projects.scss */
+/* line 86, src/scss/content/_ce-projects.scss */
 
 .projects--content-badge--info {
   background: orange;
 }
 
-/* line 88, src/scss/content/_ce-projects.scss */
+/* line 91, src/scss/content/_ce-projects.scss */
 
 .projects--content-title {
   font-size: 18px;
@@ -1942,7 +1950,7 @@ a:hover .link-arrow {
   color: #262626;
 }
 
-/* line 95, src/scss/content/_ce-projects.scss */
+/* line 98, src/scss/content/_ce-projects.scss */
 
 .projects--link {
   height: 25px;
@@ -1951,13 +1959,13 @@ a:hover .link-arrow {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fab%22%20data-icon%3D%22github-square%22%20class%3D%22svg-inline--fa%20fa-github-square%20fa-w-14%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%2898%2C98%2C98%29%22%20d%3D%22M400%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h352c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zM277.3%20415.7c-8.4%201.5-11.5-3.7-11.5-8%200-5.4.2-33%20.2-55.3%200-15.6-5.2-25.5-11.3-30.7%2037-4.1%2076-9.2%2076-73.1%200-18.2-6.5-27.3-17.1-39%201.7-4.3%207.4-22-1.7-45-13.9-4.3-45.7%2017.9-45.7%2017.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1%200-28.4%201.9-41.6%205.6%200%200-31.8-22.2-45.7-17.9-9.1%2022.9-3.5%2040.6-1.7%2045-10.6%2011.7-15.6%2020.8-15.6%2039%200%2063.6%2037.3%2069%2074.3%2073.1-4.8%204.3-9.1%2011.7-10.6%2022.3-9.5%204.3-33.8%2011.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1%2010.2-1.1%2010.2%2010.8%205%2018.4%2024.2%2018.4%2024.2%209.7%2029.7%2056.1%2019.7%2056.1%2019.7%200%2013.9.2%2036.5.2%2040.6%200%204.3-3%209.5-11.5%208-66-22.1-112.2-84.9-112.2-158.3%200-91.8%2070.2-161.5%20162-161.5S388%20165.6%20388%20257.4c.1%2073.4-44.7%20136.3-110.7%20158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5%201.1-2.8%203-3.2%201.9-.2%203.7.6%203.9%201.9.3%201.3-1%202.6-3%203zm-9.5-.9c0%201.3-1.5%202.4-3.5%202.4-2.2.2-3.7-.9-3.7-2.4%200-1.3%201.5-2.4%203.5-2.4%201.9-.2%203.7.9%203.7%202.4zm-13.7-1.1c-.4%201.3-2.4%201.9-4.1%201.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3%202.4-1.9%204.1-1.5%202%20.6%203.3%202.1%202.8%203.4zm-12.3-5.4c-.9%201.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1%202.8-.9%204.3.6%201.3%201.3%201.8%203.3.9%204.1zm-9.1-9.1c-.9.6-2.6%200-3.7-1.5s-1.1-3.2%200-3.9c1.1-.9%202.8-.2%203.7%201.3%201.1%201.5%201.1%203.3%200%204.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9%202.4-.4%203.5.6%201.1%201.3%201.3%202.8.4%203.5zm-6.7-7.4c-.4.9-1.7%201.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6%201.5-.9%202.8-.4%201.3.7%201.9%201.8%201.5%202.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat right;
 }
 
-/* line 101, src/scss/content/_ce-projects.scss */
+/* line 104, src/scss/content/_ce-projects.scss */
 
 .projects--link:hover {
   background: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22fab%22%20data-icon%3D%22github-square%22%20class%3D%22svg-inline--fa%20fa-github-square%20fa-w-14%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%20style%3D%22%22%3E%3Cpath%20fill%3D%22rgb%2838%2C38%2C38%29%22%20d%3D%22M400%2032H48C21.5%2032%200%2053.5%200%2080v352c0%2026.5%2021.5%2048%2048%2048h352c26.5%200%2048-21.5%2048-48V80c0-26.5-21.5-48-48-48zM277.3%20415.7c-8.4%201.5-11.5-3.7-11.5-8%200-5.4.2-33%20.2-55.3%200-15.6-5.2-25.5-11.3-30.7%2037-4.1%2076-9.2%2076-73.1%200-18.2-6.5-27.3-17.1-39%201.7-4.3%207.4-22-1.7-45-13.9-4.3-45.7%2017.9-45.7%2017.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1%200-28.4%201.9-41.6%205.6%200%200-31.8-22.2-45.7-17.9-9.1%2022.9-3.5%2040.6-1.7%2045-10.6%2011.7-15.6%2020.8-15.6%2039%200%2063.6%2037.3%2069%2074.3%2073.1-4.8%204.3-9.1%2011.7-10.6%2022.3-9.5%204.3-33.8%2011.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1%2010.2-1.1%2010.2%2010.8%205%2018.4%2024.2%2018.4%2024.2%209.7%2029.7%2056.1%2019.7%2056.1%2019.7%200%2013.9.2%2036.5.2%2040.6%200%204.3-3%209.5-11.5%208-66-22.1-112.2-84.9-112.2-158.3%200-91.8%2070.2-161.5%20162-161.5S388%20165.6%20388%20257.4c.1%2073.4-44.7%20136.3-110.7%20158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5%201.1-2.8%203-3.2%201.9-.2%203.7.6%203.9%201.9.3%201.3-1%202.6-3%203zm-9.5-.9c0%201.3-1.5%202.4-3.5%202.4-2.2.2-3.7-.9-3.7-2.4%200-1.3%201.5-2.4%203.5-2.4%201.9-.2%203.7.9%203.7%202.4zm-13.7-1.1c-.4%201.3-2.4%201.9-4.1%201.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3%202.4-1.9%204.1-1.5%202%20.6%203.3%202.1%202.8%203.4zm-12.3-5.4c-.9%201.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1%202.8-.9%204.3.6%201.3%201.3%201.8%203.3.9%204.1zm-9.1-9.1c-.9.6-2.6%200-3.7-1.5s-1.1-3.2%200-3.9c1.1-.9%202.8-.2%203.7%201.3%201.1%201.5%201.1%203.3%200%204.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9%202.4-.4%203.5.6%201.1%201.3%201.3%202.8.4%203.5zm-6.7-7.4c-.4.9-1.7%201.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6%201.5-.9%202.8-.4%201.3.7%201.9%201.8%201.5%202.6z%22%2F%3E%3C%2Fsvg%3E) no-repeat right;
 }
 
-/* line 105, src/scss/content/_ce-projects.scss */
+/* line 108, src/scss/content/_ce-projects.scss */
 
 .projects--link--external {
   color: #626262;
@@ -1965,7 +1973,7 @@ a:hover .link-arrow {
   text-decoration: underline;
 }
 
-/* line 110, src/scss/content/_ce-projects.scss */
+/* line 113, src/scss/content/_ce-projects.scss */
 
 .projects--link--external:hover {
   color: #262626;
@@ -2155,8 +2163,8 @@ a:hover .link-arrow {
 /* line 1, src/scss/content/_ce-thinks_i_love.scss */
 
 .thinks {
-  padding-top: 50px;
   background-color: #efefef;
+  padding-top: 50px;
 }
 
 /* line 6, src/scss/content/_ce-thinks_i_love.scss */
@@ -2670,7 +2678,7 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 47, src/scss/content/_ce-contact.scss */
+  /* line 51, src/scss/content/_ce-contact.scss */
 
   .contact--map-wrap {
     margin-left: -32px;
@@ -2689,7 +2697,7 @@ a:hover .link-arrow {
     margin: 0 -32px;
   }
 
-  /* line 16, src/scss/content/_ce-last-projects.scss */
+  /* line 20, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     display: grid;
@@ -2697,7 +2705,7 @@ a:hover .link-arrow {
     grid-gap: 24px;
   }
 
-  /* line 21, src/scss/content/_ce-projects.scss */
+  /* line 23, src/scss/content/_ce-projects.scss */
 
   .projects--boxes {
     grid-template-columns: repeat(2, 1fr);
@@ -2718,7 +2726,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 601px) and (min-width: 1025px) {
-  /* line 16, src/scss/content/_ce-last-projects.scss */
+  /* line 20, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     grid-gap: 40px;
@@ -2750,26 +2758,26 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 2, src/scss/content/_ce-contact-form.scss */
+  /* line 8, src/scss/content/_ce-contact-form.scss */
 
   .contact-form--container-inner {
     grid-template-columns: 2fr 1fr;
   }
 
-  /* line 23, src/scss/content/_ce-contact-form.scss */
+  /* line 29, src/scss/content/_ce-contact-form.scss */
 
   .contact-form--input-group:last-child {
     grid-column: span 2;
   }
 
-  /* line 1, src/scss/content/_ce-contact.scss */
+  /* line 5, src/scss/content/_ce-contact.scss */
 
   .contact--container-inner {
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 0;
   }
 
-  /* line 47, src/scss/content/_ce-contact.scss */
+  /* line 51, src/scss/content/_ce-contact.scss */
 
   .contact--map-wrap {
     position: relative;
@@ -2777,7 +2785,7 @@ a:hover .link-arrow {
     margin-right: unset;
   }
 
-  /* line 61, src/scss/content/_ce-contact.scss */
+  /* line 65, src/scss/content/_ce-contact.scss */
 
   .contact--map-wrap:after {
     content: "";
@@ -2796,10 +2804,22 @@ a:hover .link-arrow {
     grid-gap: 30px;
   }
 
-  /* line 123, src/scss/content/_ce-last-projects.scss */
+  /* line 1, src/scss/content/_ce-last-projects.scss */
+
+  .last-projects {
+    padding-top: 80px;
+  }
+
+  /* line 127, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--column-right {
     grid-gap: 10px;
+  }
+
+  /* line 1, src/scss/content/_ce-projects.scss */
+
+  .projects {
+    padding-top: 50px;
   }
 
   /* line 6, src/scss/content/_ce-text-image-teaser.scss */
@@ -2855,13 +2875,13 @@ a:hover .link-arrow {
     margin: 0 -40px;
   }
 
-  /* line 21, src/scss/content/_ce-projects.scss */
+  /* line 23, src/scss/content/_ce-projects.scss */
 
   .projects--boxes {
     grid-gap: 40px;
   }
 
-  /* line 21, src/scss/content/_ce-projects.scss */
+  /* line 23, src/scss/content/_ce-projects.scss */
 
   .projects--boxes {
     grid-template-columns: repeat(3, 1fr);
@@ -2906,14 +2926,14 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 29, src/scss/content/_ce-last-projects.scss */
+  /* line 33, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--column-left {
     display: inherit;
     grid-template-columns: 3fr 2fr;
   }
 
-  /* line 132, src/scss/content/_ce-last-projects.scss */
+  /* line 136, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--right-item {
     grid-template-columns: 1fr 2fr;
@@ -3103,7 +3123,7 @@ a:hover .link-arrow {
     display: inherit;
   }
 
-  /* line 48, src/scss/content/_ce-last-projects.scss */
+  /* line 52, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--left-image-box {
     display: none;
@@ -3142,7 +3162,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 601px) and (min-width: 900px) and (max-width: 1024px) {
-  /* line 16, src/scss/content/_ce-last-projects.scss */
+  /* line 20, src/scss/content/_ce-last-projects.scss */
 
   .last-projects--content {
     grid-gap: 32px;
@@ -3150,7 +3170,7 @@ a:hover .link-arrow {
 }
 
 @media (min-width: 900px) and (max-width: 1024px) {
-  /* line 21, src/scss/content/_ce-projects.scss */
+  /* line 23, src/scss/content/_ce-projects.scss */
 
   .projects--boxes {
     grid-gap: 32px;

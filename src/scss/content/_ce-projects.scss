@@ -1,5 +1,7 @@
 .projects {
-  padding-top: 50px;
+  @include from($tablet) {
+    padding-top: 50px;
+  }
 }
 
 .projects--headline {
@@ -21,6 +23,7 @@
 .projects--boxes {
   display: grid;
   @include grid-gap;
+  grid-row-gap: 40px;
 
   @include from($mobile) {
     grid-template-columns: repeat(2, 1fr);
@@ -80,7 +83,7 @@
   border-radius: 3px;
   font-size: 10px;
 
-  &--info{
+  &--info {
     background: orange;
   }
 }
