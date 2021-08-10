@@ -1338,13 +1338,13 @@ a:hover .link-arrow {
   padding-bottom: 40px;
 }
 
-/* line 8, src/scss/content/_ce-contact-form.scss */
+/* line 7, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--container-inner {
   display: grid;
 }
 
-/* line 17, src/scss/content/_ce-contact-form.scss */
+/* line 16, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--headline {
   position: relative;
@@ -1352,28 +1352,28 @@ a:hover .link-arrow {
   font-weight: bold;
 }
 
-/* line 25, src/scss/content/_ce-contact-form.scss */
+/* line 24, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group {
   display: grid;
   position: relative;
 }
 
-/* line 38, src/scss/content/_ce-contact-form.scss */
+/* line 37, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group--danger .contact-form--input-field,
 .contact-form--input-group--danger .contact-form--textarea {
   outline: 1px solid #9b1c20;
 }
 
-/* line 45, src/scss/content/_ce-contact-form.scss */
+/* line 44, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-group--success .contact-form--input-field,
 .contact-form--input-group--success .contact-form--textarea {
   outline: 1px solid #7BAD00FF;
 }
 
-/* line 53, src/scss/content/_ce-contact-form.scss */
+/* line 52, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--input-field {
   padding: 10px 15px;
@@ -1381,7 +1381,7 @@ a:hover .link-arrow {
   outline: 1px solid #cccccc;
 }
 
-/* line 59, src/scss/content/_ce-contact-form.scss */
+/* line 58, src/scss/content/_ce-contact-form.scss */
 
 .pristine-error {
   position: absolute;
@@ -1391,7 +1391,7 @@ a:hover .link-arrow {
   color: #9b1c20;
 }
 
-/* line 68, src/scss/content/_ce-contact-form.scss */
+/* line 67, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--textarea {
   position: relative;
@@ -1401,14 +1401,14 @@ a:hover .link-arrow {
   outline: 1px solid #cccccc;
 }
 
-/* line 76, src/scss/content/_ce-contact-form.scss */
+/* line 75, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--content-wrapp {
   display: grid;
   grid-gap: 30px;
 }
 
-/* line 81, src/scss/content/_ce-contact-form.scss */
+/* line 80, src/scss/content/_ce-contact-form.scss */
 
 .contact-form--submit-btn {
   display: inline-block;
@@ -2758,13 +2758,13 @@ a:hover .link-arrow {
     display: none;
   }
 
-  /* line 8, src/scss/content/_ce-contact-form.scss */
+  /* line 7, src/scss/content/_ce-contact-form.scss */
 
   .contact-form--container-inner {
     grid-template-columns: 2fr 1fr;
   }
 
-  /* line 29, src/scss/content/_ce-contact-form.scss */
+  /* line 28, src/scss/content/_ce-contact-form.scss */
 
   .contact-form--input-group:last-child {
     grid-column: span 2;
