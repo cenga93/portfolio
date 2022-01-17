@@ -1,4 +1,4 @@
-#Personal portfolio
+# Personal portfolio
 
 ###Base installation instruction
   ```shell
@@ -18,13 +18,13 @@ _If you don't have and **node** and **npm**, execute the following command:_
   sudo npm install --global gulp gulp-cli
   ```
 ***
-##Libraries in project
+## Libraries in project
 * Splide slider
 * Pristine form validator
 * Fslightbox
 * Lazyload.js
 
-##Dependesies
+## Dependesies
 * dotenv
 * ejs
 * express
