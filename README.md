@@ -1,6 +1,6 @@
 # Personal portfolio
 
-###Base installation instruction
+### Base installation instruction
   ```shell
   cd Desktop/
   git clone https://github.com/cenga93/portfolio.git
